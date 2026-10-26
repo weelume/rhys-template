@@ -1,0 +1,41 @@
+[
+  {
+    "id": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "overflow": 0
+  },
+  {
+    "id": "tablet",
+    "width": 834,
+    "height": 1180,
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "overflow": 0
+  },
+  {
+    "id": "mobile",
+    "width": 390,
+    "height": 844,
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "overflow": 0
+  }
+]

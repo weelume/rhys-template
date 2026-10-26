@@ -3,9 +3,9 @@
   "format": "git-template-verification",
   "formatVersion": "0.2.0",
   "status": "passed",
-  "checkedAt": "2026-10-26T10:18:34.486Z",
+  "checkedAt": "2026-10-26T10:44:22.465Z",
   "sourceCommit": null,
-  "sourceDigest": "7359988e3aa5428938c6b955063b176da381d25e6da9152cbb2182775797309e",
+  "sourceDigest": "0c4fd8eb5ecfb30aeb25666500c7ce3e8daed0970bad7e536306e98d38d620cf",
   "environment": {
     "platform": "linux (local WSL)",
     "arch": "x64",
@@ -25,8 +25,8 @@
       ],
       "status": "passed",
       "exitCode": 0,
-      "startedAt": "2026-10-26T10:14:41.329Z",
-      "finishedAt": "2026-10-26T10:14:43.170Z"
+      "startedAt": "2026-10-26T10:43:07.539Z",
+      "finishedAt": "2026-10-26T10:43:09.038Z"
     },
     {
       "id": "lint",
@@ -38,8 +38,8 @@
       ],
       "status": "passed",
       "exitCode": 0,
-      "startedAt": "2026-10-26T10:14:43.174Z",
-      "finishedAt": "2026-10-26T10:14:48.685Z"
+      "startedAt": "2026-10-26T10:43:09.042Z",
+      "finishedAt": "2026-10-26T10:43:11.460Z"
     },
     {
       "id": "test",
@@ -51,8 +51,8 @@
       ],
       "status": "passed",
       "exitCode": 0,
-      "startedAt": "2026-10-26T10:14:48.688Z",
-      "finishedAt": "2026-10-26T10:14:49.380Z"
+      "startedAt": "2026-10-26T10:43:11.462Z",
+      "finishedAt": "2026-10-26T10:43:12.199Z"
     },
     {
       "id": "build",
@@ -64,8 +64,8 @@
       ],
       "status": "passed",
       "exitCode": 0,
-      "startedAt": "2026-10-26T10:14:49.382Z",
-      "finishedAt": "2026-10-26T10:15:05.687Z"
+      "startedAt": "2026-10-26T10:43:12.201Z",
+      "finishedAt": "2026-10-26T10:43:30.275Z"
     }
   ],
   "services": [
@@ -73,7 +73,7 @@
       "id": "web",
       "status": "passed",
       "stopped": true,
-      "checkedAt": "2026-10-26T10:15:06.696Z",
+      "checkedAt": "2026-10-26T10:43:31.408Z",
       "reason": "独立候选生产实例 42 条双语路由均 HTTP 200，验收后停止自有进程。"
     }
   ],
