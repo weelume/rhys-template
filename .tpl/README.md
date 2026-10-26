@@ -1,6 +1,6 @@
 # Rhys 使用入口
 
-协议 `git-template` 0.2.0，模板版本 1.0.0。元数据在 `template.json`，运行合同在 `project.json`，修改入口在 `customization.json`。这些资料不会自动执行代码或安装依赖。
+协议 `git-template` 0.2.0，模板版本 1.0.1。元数据在 `template.json`，运行合同在 `project.json`，修改入口在 `customization.json`。这些资料不会自动执行代码或安装依赖。
 
 根 README 说明安装、启动、停止与检查。完整规则：
 
