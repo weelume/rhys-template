@@ -1,0 +1,1750 @@
+{
+  "notes/a-component-isnt-reusable-until-broken": {
+    "title": "Let's connect",
+    "intro": [
+      "Design",
+      "The difference between a component that works and one that survives contact with a team you don't control.",
+      "Aug 2026"
+    ],
+    "body": [
+      {
+        "tag": "p",
+        "text": "I built a card component I was genuinely proud of. Clean variants, sensible props, handled every case I could think of. Then someone on another team used it for something I hadn’t thought of, and it broke in a way that taught me more about component design than the six months I’d spent building it."
+      },
+      {
+        "tag": "h3",
+        "text": "What ‘working’ actually meant"
+      },
+      {
+        "tag": "p",
+        "text": "The component worked for every use case I had personally tested — which, it turned out, was a narrower set than I believed, because I’d unconsciously designed the test cases around how I already intended to use it. It’s hard to notice the gap between “handles every case I thought of” and “handles every case that will occur” until someone else supplies a case you didn’t think of, on a deadline, without asking you first."
+      },
+      {
+        "tag": "p",
+        "text": "The break itself was almost boring: someone nested the card inside another card, for a comparison view I hadn’t imagined, and every assumption about available width silently stopped being true. Nothing crashed. It just looked wrong, in a way that took two days to trace back to a component three layers removed from the actual bug report."
+      },
+      {
+        "tag": "h3",
+        "text": "The real test isn’t your test suite"
+      },
+      {
+        "tag": "p",
+        "text": "I’d written what I thought was reasonable coverage — different content lengths, empty states, a loading state, dark mode. What I hadn’t written, because I hadn’t imagined it, was any test for the component existing somewhere I hadn’t designed it to exist. That’s structurally impossible to test for in advance. You can’t enumerate the ways people you’ve never met will misuse something built for people you have met."
+      },
+      {
+        "tag": "p",
+        "text": "This is the actual argument for shipping components before they feel finished, which sounds backwards. A component nobody but its author has touched yet is unreusable by definition — not because it’s badly built, but because “reusable” is a claim about how it behaves under conditions its author didn’t anticipate, and there’s no way to generate those conditions alone."
+      },
+      {
+        "tag": "h3",
+        "text": "What changed after that"
+      },
+      {
+        "tag": "p",
+        "text": "I stopped treating a new component’s first release as the finished version and started treating it as the first draft of a test suite I couldn’t write myself. The real spec gets written by whoever uses it in a context I didn’t imagine, and the bug reports that follow aren’t failures of the original design — they’re the design process finally getting the input it needed."
+      },
+      {
+        "tag": "p",
+        "text": "Practically, this means I ship components looser and earlier than I used to, with more visible seams, and I pay closer attention to the first three teams who adopt something new than to my own review of it. Their misuse is more informative than my testing, every time, because it’s the only source of the cases I structurally couldn’t have thought of."
+      },
+      {
+        "tag": "p",
+        "text": "Rhys O’Sullivan is a product designer at Fieldstone, previously Loop. This is one in an occasional series of notes on research, systems, and the process of making things."
+      }
+    ]
+  },
+  "notes/i-stopped-asking-the-model-to-be-creative": {
+    "title": "Let's connect",
+    "intro": [
+      "AI",
+      "The prompts that produced real work were never the ones asking for ideas — they were the ones asking for constraints.",
+      "Aug 2026"
+    ],
+    "body": [
+      {
+        "tag": "p",
+        "text": "My early prompts all had some version of the same shape: “give me some creative directions for X.” The outputs were fluent, confident, and almost never usable. It took longer than I’d like to admit to notice the pattern wasn’t the model. It was the question."
+      },
+      {
+        "tag": "h3",
+        "text": "What ‘be creative’ actually asks for"
+      },
+      {
+        "tag": "p",
+        "text": "Asking an open-ended question invites an open-ended answer, and an open-ended answer, from a system trained to sound plausible across every register at once, tends toward the statistically safe center of whatever category you asked about. “Creative tagline ideas” produces the taglines that sound most like every other tagline, because that’s what’s most represented in the space of plausible answers. I was asking for the thing least likely to actually be novel, using the word most associated with novelty."
+      },
+      {
+        "tag": "p",
+        "text": "The shift started by accident, on a day I was in a hurry and wrote an oddly specific prompt — a length constraint, a banned word list, a required reference to a real detail from the project — because I didn’t have time to explain the vibe I wanted. The output was sharper than anything I’d gotten from a week of open-ended requests. Not because it was more “creative” in any way I could define. Because the constraints closed off the safe, generic answers and forced something more specific into the gap."
+      },
+      {
+        "tag": "h3",
+        "text": "Constraints as the actual prompt"
+      },
+      {
+        "tag": "p",
+        "text": "What I do differently now: instead of describing the quality I want (clever, bold, unexpected), I describe the shape of the output and the things it’s not allowed to do. Not “a punchy headline” but “a headline under six words that doesn’t use the word ‘seamless’ and references the actual number from the case study.” The second version produces worse results maybe a third of the time. It produces genuinely surprising results far more often than the first version ever did, because there’s less room for the model to retreat to its safest average answer."
+      },
+      {
+        "tag": "p",
+        "text": "This generalizes past writing. Asking for “an interesting layout” gets you the layout most represented in the training data’s idea of interesting, which is to say, not interesting. Asking for a layout that fits a specific, unusual constraint — a fixed number of elements, an aspect ratio nobody designs for, a rule that seems arbitrary — tends to produce something further from the center of the distribution, purely because the center doesn’t fit the constraint."
+      },
+      {
+        "tag": "h3",
+        "text": "The uncomfortable part"
+      },
+      {
+        "tag": "p",
+        "text": "This means the actual creative work moved. It’s not in the request for ideas anymore — it’s in choosing the constraint. A good constraint is doing the job “be creative” used to pretend to do, and coming up with a good one is a real skill, not a shortcut around having one. I spend more time now thinking about what to forbid than what to ask for, which is a strange sentence to have become true, but it’s the difference between output I use and output I regenerate five more times hoping for something better."
+      },
+      {
+        "tag": "p",
+        "text": "Rhys O’Sullivan is a product designer at Fieldstone, previously Loop. This is one in an occasional series of notes on research, systems, and the process of making things."
+      }
+    ]
+  },
+  "notes/most-research-fails-in-the-readout": {
+    "title": "Let's connect",
+    "intro": [
+      "Design",
+      "The sessions were fine. What died was everything between the transcript and the six-slide deck nobody reopened.",
+      "Jul 2026"
+    ],
+    "body": [
+      {
+        "tag": "p",
+        "text": "Every research post-mortem I’ve sat through starts with the same question: was the sample right, were the questions right, did we talk to enough people. After enough of these, I started tracking a different number — not how many sessions we ran, but how many of our findings anyone could still name three months later. The number was small enough to embarrass me."
+      },
+      {
+        "tag": "h3",
+        "text": "The interviews were never the problem"
+      },
+      {
+        "tag": "p",
+        "text": "Six studies, one quarter, decent recruiting, competent moderation. When I went back through the recordings looking for what went wrong, I mostly found good research. Participants who contradicted themselves in useful ways, moderators who followed up on the right things, real signal buried in real conversations. The problem wasn’t upstream of the readout. It was the readout itself, and everything downstream of it."
+      },
+      {
+        "tag": "p",
+        "text": "A readout deck is built to be presented once, to a room, live, with someone narrating the slides. That format has a hidden assumption baked into it: that the value of the research gets transferred in that one meeting, to whoever’s in the room. Everyone who wasn’t there — which by month three is almost everyone — gets nothing but a file they’ll never open, because a deck without its narrator is mostly blank space and quotes with no context."
+      },
+      {
+        "tag": "h3",
+        "text": "What actually gets reused"
+      },
+      {
+        "tag": "p",
+        "text": "I started checking, deliberately, what research artifacts people actually reopened later — not what they said was useful in the debrief, but what showed up in a Slack search three months on. It was never the deck. It was two things: a single sharp quote someone had pasted directly into a ticket, and a short written summary that read like a memo, not a presentation."
+      },
+      {
+        "tag": "p",
+        "text": "Both of those survive without a narrator. A quote is self-contained — it doesn’t need thirty minutes of context to land. A memo is built to be read cold, by someone who wasn’t in the room, at 11pm before a decision the next morning. A slide deck is built to be watched, once, with someone standing next to it. Almost none of our findings needed to be watched. They needed to be read, later, by someone who didn’t know the study existed."
+      },
+      {
+        "tag": "h3",
+        "text": "What changed"
+      },
+      {
+        "tag": "p",
+        "text": "The deck didn’t disappear — some decisions still need a room and a live conversation. But it’s no longer the primary artifact. Every study now produces a one-page written memo first, addressed to nobody in particular, built to make sense with zero shared context. The deck, when we still make one, gets built from the memo, not the other way around."
+      },
+      {
+        "tag": "p",
+        "text": "The other change was smaller and mattered more: every finding gets a home outside the research doc. A quote that should shape a specific feature gets pasted into that feature’s ticket, not left in a shared drive folder three clicks from anyone who’d need it. This felt like busywork the first few times. It’s the only part of this that’s actually changed what ships."
+      },
+      {
+        "tag": "p",
+        "text": "Rhys O’Sullivan is a product designer at Fieldstone, previously Loop. This is one in an occasional series of notes on research, systems, and the process of making things."
+      }
+    ]
+  },
+  "notes/the-best-tool-i-turned-off": {
+    "title": "Let's connect",
+    "intro": [
+      "Design",
+      "A year of accumulating plugins, and the highest-leverage change was disabling most of them.",
+      "Sep 2026"
+    ],
+    "body": [
+      {
+        "tag": "p",
+        "text": "By the start of this year I had eleven plugins installed in my design tool, each one solving a real problem I’d had at some point. I could name the exact frustration that justified each install. What I couldn’t do, if you’d asked me cold, was name more than four I’d actually used in the past month."
+      },
+      {
+        "tag": "h3",
+        "text": "The cost that doesn’t show up anywhere"
+      },
+      {
+        "tag": "p",
+        "text": "Every plugin is small on its own. An extra menu item, a slightly longer load time, one more update prompt to dismiss. None of that shows up as a cost in any way you’d notice day to day — until you try to explain your setup to someone else, or open the tool on a machine that doesn’t have your accumulated eleven plugins, and realize how much of your speed was quietly borrowed from tools you’d forgotten you were relying on."
+      },
+      {
+        "tag": "p",
+        "text": "The actual cost was decision fatigue I’d stopped noticing because it had become ambient. Eleven plugins means eleven places a keyboard shortcut might conflict, eleven extra icons competing for attention in a toolbar, eleven small “which tool handles this” decisions per day that I’d stopped consciously making but hadn’t stopped paying for."
+      },
+      {
+        "tag": "h3",
+        "text": "What happened when I turned them off"
+      },
+      {
+        "tag": "p",
+        "text": "I disabled everything except the four I could name using in the past month, expecting to immediately need three of the seven back. I needed one, once, for a specific export task, and reinstalled it for the afternoon. The other six I have not missed, which is the part I found genuinely surprising — I’d have bet real money at least half of them were load-bearing."
+      },
+      {
+        "tag": "p",
+        "text": "What I actually got back wasn’t speed in any single task. It was a smaller, calmer surface — fewer places to look before doing something routine, fewer decisions about which tool handles a job four tools claim to handle. The gain wasn’t in any one workflow. It was in the space between workflows, which had gotten quietly cluttered without a single moment where that clutter felt like a decision I was making."
+      },
+      {
+        "tag": "h3",
+        "text": "The actual lesson"
+      },
+      {
+        "tag": "p",
+        "text": "I don’t think plugins are bad, and I’ve reinstalled a couple since, deliberately, for specific recurring needs. What changed is the default. I used to install first and ask later whether I still needed something. Now the default is off, and something has to earn its way back in by solving a problem I’m actually hitting this month — not a problem I hit once, eight months ago, that justified an install I never revisited."
+      },
+      {
+        "tag": "p",
+        "text": "Rhys O’Sullivan is a product designer at Fieldstone, previously Loop. This is one in an occasional series of notes on research, systems, and the process of making things."
+      }
+    ]
+  },
+  "notes/the-last-ten-percent-is-a-different-skill": {
+    "title": "Let's connect",
+    "intro": [
+      "Craft",
+      "The instincts that get a design from nothing to mostly-there are almost the opposite of the ones that get it from mostly-there to actually done.",
+      "Jul 2026"
+    ],
+    "body": [
+      {
+        "tag": "p",
+        "text": "I used to think finishing was just more of the same work, done slower. Turns out it’s a different job entirely, and I only really understood that after watching two very good designers fail at it in opposite directions."
+      },
+      {
+        "tag": "h3",
+        "text": "The generator and the finisher"
+      },
+      {
+        "tag": "p",
+        "text": "One of them could produce three credible directions before lunch. Fast, loose, confident — the kind of designer a project needs in week one. Put the same person in week six, polishing a shipped flow’s edge cases, and the work stalled. Not because they got worse. Because the skill that made week one fast — generating options, moving on before doubt set in — was actively working against week six, where the job was to sit with one option and find everything wrong with it."
+      },
+      {
+        "tag": "p",
+        "text": "The other designer was the reverse. Slow to start, uncomfortable committing to a direction before it felt right — and then, once something existed, relentless. Every spacing value questioned, every transition timed against three alternatives, every edge case chased down. Early on I read this as indecisiveness. It wasn’t. It was someone whose actual skill only turns on once there’s something concrete to interrogate."
+      },
+      {
+        "tag": "h3",
+        "text": "What the first ninety percent actually rewards"
+      },
+      {
+        "tag": "p",
+        "text": "Getting from nothing to mostly-there rewards speed of judgment. You’re constantly deciding “good enough, move on” across dozens of small choices, because stopping to perfect any one of them means the other ninety don’t get made at all. The skill is knowing which ten things matter enough to slow down for, and moving fast past the other ninety."
+      },
+      {
+        "tag": "p",
+        "text": "This produces real value. A rough version of the whole thing, end to end, tells you more about whether the concept works than a polished version of one-tenth of it ever could. I don’t think this phase is optional or lesser. It’s just a specific skill, and it’s not the same one as what comes next."
+      },
+      {
+        "tag": "h3",
+        "text": "What the last ten percent actually rewards"
+      },
+      {
+        "tag": "p",
+        "text": "Finishing rewards the opposite instinct: the willingness to stay on one thing past the point where it feels done, because “feels done” and “is done” are different claims. The corner radius that’s technically fine. The loading state nobody designed because it only shows up for 400 milliseconds. The focus ring that works for a mouse and disappears for a keyboard. None of this is generative work. It’s closer to proofreading — except the errors don’t announce themselves, and most people stop looking before they find them."
+      },
+      {
+        "tag": "p",
+        "text": "The uncomfortable part: this phase produces almost nothing that shows up in a portfolio. Nobody screenshots a corrected line-height. The work is invisible by design — you’re not adding anything, you’re removing the hundred small reasons an interface feels slightly off in ways nobody can name."
+      },
+      {
+        "tag": "h3",
+        "text": "Staffing for both"
+      },
+      {
+        "tag": "p",
+        "text": "The mistake I made for years was assuming a good designer was good at both, and that the same person should carry a project start to finish. Some can. Most, in my experience, are meaningfully better at one than the other — and a team that quietly lets its best generators also do the finishing, or its best finishers also do the initial exploration, is leaving real speed on the table in both directions."
+      },
+      {
+        "tag": "p",
+        "text": "I don’t have a clean system for this yet. What I do now is ask, out loud, in week one: who on this team actually enjoys week six? The honest answer is rarely everyone, and it’s almost never the person you’d guess from their week-one output."
+      },
+      {
+        "tag": "p",
+        "text": "Rhys O’Sullivan is a product designer at Fieldstone, previously Loop. This is one in an occasional series of notes on research, systems, and the process of making things."
+      }
+    ]
+  },
+  "notes/the-roadmap-review-we-replaced": {
+    "title": "Let's connect",
+    "intro": [
+      "Process",
+      "Killing a two-hour quarterly ritual for something small enough that nobody could avoid actually doing it.",
+      "Aug 2026"
+    ],
+    "body": [
+      {
+        "tag": "p",
+        "text": "The quarterly roadmap review took two hours, involved every lead in the org, and by my count changed the actual roadmap maybe once a year. Everyone agreed it wasn’t working. It survived three more quarters anyway, because nobody had a replacement small enough to feel safe proposing."
+      },
+      {
+        "tag": "h3",
+        "text": "What the meeting was actually for"
+      },
+      {
+        "tag": "p",
+        "text": "On paper, it existed to align the team on priorities and surface conflicts before they became expensive. In practice, most real conflicts had already been resolved in hallway conversations before the meeting started, and the meeting itself mostly re-presented decisions everyone in the room already knew about. The two hours weren’t wasted on nothing — they were wasted re-communicating things that had already been communicated, badly, through a slower channel."
+      },
+      {
+        "tag": "p",
+        "text": "The actual alignment problems — the ones that cost real time when they went unresolved — were smaller and more frequent than quarterly. A design decision that quietly assumed a different scope than engineering was building against. A dependency two teams both assumed the other owned. These didn’t wait for a quarter to become expensive. They became expensive in about two weeks, which is exactly the gap a quarterly meeting can’t close."
+      },
+      {
+        "tag": "h3",
+        "text": "What replaced it"
+      },
+      {
+        "tag": "p",
+        "text": "A five-minute standup, three times a week, with one question: what’s the smallest misalignment you’re aware of right now. Not status. Not progress. Specifically the gap between what you think is true and what you suspect someone else thinks is true. Most days, nobody has anything. On the days someone does, it takes ninety seconds to say and five minutes to resolve — instead of festering for six weeks until it surfaces in a much more expensive form."
+      },
+      {
+        "tag": "p",
+        "text": "This felt like a downgrade at first. A five-minute standup can’t carry the weight a two-hour strategic review is supposed to carry, and for a while I worried we’d lost the forest for the trees. What actually happened is that the forest-level questions — the ones that genuinely need a quarter’s perspective — turned out to be rare enough to handle as one-off conversations when they came up, rather than a recurring ritual sized for a problem that mostly wasn’t there."
+      },
+      {
+        "tag": "h3",
+        "text": "What this cost"
+      },
+      {
+        "tag": "p",
+        "text": "We lost a shared moment where the whole team heard the same thing at the same time, which had real value beyond the information itself — it was one of the few times everyone felt like they were looking at the same picture. I don’t think the small standup replaces that fully. We’ve had to be more deliberate about creating that shared-picture moment separately, on a much less frequent cadence, instead of assuming a status meeting would do it for free."
+      },
+      {
+        "tag": "p",
+        "text": "Rhys O’Sullivan is a product designer at Fieldstone, previously Loop. This is one in an occasional series of notes on research, systems, and the process of making things."
+      }
+    ]
+  },
+  "work/compass-usability-testing-ops": {
+    "title": "Compass — Usability Testing Ops",
+    "intro": [
+      "Compass runs usability testing operations for a healthcare app's internal research team — recruiting participants, scheduling sessions, and organizing findings for a team running about fifteen studies a month. Recruiting logistics alone were eating most of a researcher's week, and the average time from \"we need to test this\" to a completed session was three and a half weeks.",
+      "Client",
+      "Compass",
+      "Role",
+      "Product Designer — led design end to end",
+      "Team",
+      "1 PM, 2 engineers, 2 researchers",
+      "Timeline",
+      "Jan – Apr 2026",
+      "Platforms",
+      "Web",
+      "Focus",
+      "Research velocity, cross-team scheduling, session reuse",
+      "The Self-Serve Scheduling View.",
+      "Every study started from a blank scheduling spreadsheet.",
+      "A researcher writing a screener, individually emailing recruiting panels, chasing scheduling conflicts across time zones, and re-explaining consent logistics to every new participant — for every single study, even ones nearly identical to one run the month before. The tool itself wasn’t the bottleneck; the manual coordination around it was.",
+      "",
+      "“I spend more time scheduling the test than I do actually learning from it.”"
+    ],
+    "body": [
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/rJbA3H2qc1SusDNkpmy1Dc8WuQk.jpg",
+        "alt": "airplanes window view of sky during golden hour"
+      },
+      {
+        "tag": "p",
+        "text": "The Self-Serve Scheduling View."
+      },
+      {
+        "tag": "h2",
+        "text": "The challenge"
+      },
+      {
+        "tag": "p",
+        "text": "Every study started from a blank scheduling spreadsheet."
+      },
+      {
+        "tag": "p",
+        "text": "A researcher writing a screener, individually emailing recruiting panels, chasing scheduling conflicts across time zones, and re-explaining consent logistics to every new participant — for every single study, even ones nearly identical to one run the month before. The tool itself wasn’t the bottleneck; the manual coordination around it was."
+      },
+      {
+        "tag": "p",
+        "text": "“I spend more time scheduling the test than I do actually learning from it.”"
+      },
+      {
+        "tag": "p",
+        "text": "— Staff researcher, health app team"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/OoemmGnLYp2LlYEKKryT1odcbU.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/Z9VsQ2NQ3XCqifyA2ScVhta6HdU.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/bDRH1jiO8bj6Ax1udK0cKLGy8n4.jpg",
+        "alt": "A lone tree on a grassy hill overlooking a pebble beach and mountains"
+      },
+      {
+        "tag": "p",
+        "text": "The Self-Serve Scheduling View."
+      },
+      {
+        "tag": "h2",
+        "text": "The Process"
+      },
+      {
+        "tag": "p",
+        "text": "Mapped the coordination, not just the interface. We traced every study from request to completed session across four researchers and found the same six manual steps repeated nearly every time."
+      },
+      {
+        "tag": "p",
+        "text": "Built reusable screeners. Most studies pulled from three or four recurring participant profiles. We let researchers save and reuse a screener instead of rebuilding one per study."
+      },
+      {
+        "tag": "p",
+        "text": "Let scheduling happen without back-and-forth. Participants picked from real availability synced to the researcher’s calendar, instead of an email thread negotiating times."
+      },
+      {
+        "tag": "p",
+        "text": "Tested with the researchers who’d complain the loudest. We recruited the two most skeptical researchers on the team as our first users, on the logic that if it saved them time, it would work for everyone."
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/7tZLePD6MJyoxX9jEj26iSPUu3M.jpg",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/thKsC4QIvJLz6FU2rpdvZe1EN0.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/idOr3AmrutKaFTf0bKvP3Jni7BE.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/zg9x4AhUCJ0nxikJdfJGUoJuS0.png",
+        "alt": "None"
+      },
+      {
+        "tag": "h2",
+        "text": "Solution"
+      },
+      {
+        "tag": "p",
+        "text": "Saved screener templates. Start a new study from a past one with one click, adjusting only what’s actually different this time."
+      },
+      {
+        "tag": "p",
+        "text": "Self-serve scheduling. Participants book directly against real availability; no researcher touches a calendar invite."
+      },
+      {
+        "tag": "p",
+        "text": "A running participant pool. People who’ve tested before and consented to future contact stay in a reusable pool, cutting cold recruiting for repeat study types."
+      },
+      {
+        "tag": "p",
+        "text": "Session notes attached to the study, not scattered in docs. Every session’s notes and clips live against the study itself, searchable later without hunting through someone’s personal folder."
+      },
+      {
+        "tag": "h2",
+        "text": "Outcome"
+      },
+      {
+        "tag": "p",
+        "text": "Time from study request to completed first session dropped from three and a half weeks to nine days over the following quarter. The clearer signal: the team ran 60% more studies in the same three months without adding headcount — the actual goal, since faster scheduling only matters if it turns into more research actually happening."
+      },
+      {
+        "tag": "p",
+        "text": "What I’d do differently. The reusable participant pool worked well early but started skewing toward people who simply responded fastest and enjoyed testing, not a representative sample. By month three, findings were quietly biased toward power users. I’d have built pool rotation and freshness limits into the system from the start instead of noticing the skew after the fact."
+      },
+      {
+        "tag": "p",
+        "text": "Time to first completed session"
+      },
+      {
+        "tag": "p",
+        "text": "-74%"
+      },
+      {
+        "tag": "p",
+        "text": "Studies run per quarter, same headcount"
+      },
+      {
+        "tag": "p",
+        "text": "+60%"
+      },
+      {
+        "tag": "h2",
+        "text": "We finally spend research time on research, not on chasing calendars."
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/IxhRfl7nKJ7oS5Avx2tFeSzYBk.jpg",
+        "alt": "portrait photography of man wearing black suit jacket"
+      },
+      {
+        "tag": "p",
+        "text": "Aisha Bello"
+      },
+      {
+        "tag": "p",
+        "text": "Chief Innovation Officer"
+      }
+    ]
+  },
+  "work/harbor-onboarding-freight-marketplace": {
+    "title": "Harbor — Onboarding for a Freight Marketplace",
+    "intro": [
+      "Harbor matches independent freight carriers with shippers who need a load moved. About 900 carriers had signed up in the prior two quarters. Roughly a third of them booked a load within their first week — most of the rest never came back after the sign-up form, and support fielded the same onboarding calls on repeat.",
+      "Client",
+      "Harbor",
+      "Role",
+      "Product Designer — led design end to end",
+      "Team",
+      "1 PM, 5 engineers, 1 researcher",
+      "Timeline",
+      "Apr – Aug 2026",
+      "Platforms",
+      "Web",
+      "Focus",
+      "Activation, trust in first match, time to first booking",
+      "The Rate-Context Load Card.",
+      "Signing up was fast. Trusting the first match was not.",
+      "A new carrier finished sign-up in under five minutes, landed on a list of available loads with no context on rate history or the shipper’s reliability, and stalled. Support calls all asked some version of the same question: “Is this rate actually normal for this route?” Nothing on screen answered it, so carriers called instead of booking.",
+      "",
+      "“I had three loads in front of me and no idea which one wasn’t going to waste my week.”"
+    ],
+    "body": [
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/rJbA3H2qc1SusDNkpmy1Dc8WuQk.jpg",
+        "alt": "airplanes window view of sky during golden hour"
+      },
+      {
+        "tag": "p",
+        "text": "The Rate-Context Load Card."
+      },
+      {
+        "tag": "h2",
+        "text": "The challenge"
+      },
+      {
+        "tag": "p",
+        "text": "Signing up was fast. Trusting the first match was not."
+      },
+      {
+        "tag": "p",
+        "text": "A new carrier finished sign-up in under five minutes, landed on a list of available loads with no context on rate history or the shipper’s reliability, and stalled. Support calls all asked some version of the same question: “Is this rate actually normal for this route?” Nothing on screen answered it, so carriers called instead of booking."
+      },
+      {
+        "tag": "p",
+        "text": "“I had three loads in front of me and no idea which one wasn’t going to waste my week.”"
+      },
+      {
+        "tag": "p",
+        "text": "— Owner-operator, first week on the platform"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/OoemmGnLYp2LlYEKKryT1odcbU.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/Z9VsQ2NQ3XCqifyA2ScVhta6HdU.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/bDRH1jiO8bj6Ax1udK0cKLGy8n4.jpg",
+        "alt": "A lone tree on a grassy hill overlooking a pebble beach and mountains"
+      },
+      {
+        "tag": "p",
+        "text": "The Rate-Context Load Card."
+      },
+      {
+        "tag": "h2",
+        "text": "The Process"
+      },
+      {
+        "tag": "p",
+        "text": "Listened to forty onboarding support calls. The same three questions came up in nearly every one: is this rate fair, is this shipper reliable, what happens if something goes wrong."
+      },
+      {
+        "tag": "p",
+        "text": "Answered the calls before the carrier had to make one. Every recurring question became something visible on the load card itself, not something support explained after the fact."
+      },
+      {
+        "tag": "p",
+        "text": "Built trust from data we already had. Rate history and shipper reliability weren’t new data collection — Harbor already had it. It just wasn’t shown anywhere a carrier could see it before booking."
+      },
+      {
+        "tag": "p",
+        "text": "Shrunk the first decision. Instead of a full load board on day one, new carriers saw three matched loads with the context front and center, not forty options with none."
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/7tZLePD6MJyoxX9jEj26iSPUu3M.jpg",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/thKsC4QIvJLz6FU2rpdvZe1EN0.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/idOr3AmrutKaFTf0bKvP3Jni7BE.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/zg9x4AhUCJ0nxikJdfJGUoJuS0.png",
+        "alt": "None"
+      },
+      {
+        "tag": "h2",
+        "text": "Solution"
+      },
+      {
+        "tag": "p",
+        "text": "A rate-context badge on every load. “Typical for this route” or “above average,” pulled from real rate history, right on the card."
+      },
+      {
+        "tag": "p",
+        "text": "A shipper reliability signal. On-time payment and past carrier ratings shown inline, so a new carrier isn’t betting blind on an unfamiliar name."
+      },
+      {
+        "tag": "p",
+        "text": "A three-load starter match. New sign-ups see a small, curated set of loads suited to their equipment and location instead of the full board."
+      },
+      {
+        "tag": "p",
+        "text": "A “what happens if” panel. Plain-language answers to the cancellation, delay, and payment questions that used to require a phone call."
+      },
+      {
+        "tag": "h2",
+        "text": "Outcome"
+      },
+      {
+        "tag": "p",
+        "text": "Carriers booking a load within their first week went from 33% to 58% over the following quarter. The clearer signal: onboarding-related support calls dropped by half, which was the real cost this was designed against — every call was a carrier who couldn’t get an answer from the product itself."
+      },
+      {
+        "tag": "p",
+        "text": "What I’d do differently. The three-load starter match worked well for common routes and equipment types, but carriers in niche categories sometimes got matched to nothing good and defaulted back to the full board anyway. I’d have built a graceful fallback state for thin matches instead of assuming there’d always be three solid options."
+      },
+      {
+        "tag": "p",
+        "text": "Carriers booking within first week"
+      },
+      {
+        "tag": "p",
+        "text": "+25pts"
+      },
+      {
+        "tag": "p",
+        "text": "Onboarding-related support calls"
+      },
+      {
+        "tag": "p",
+        "text": "-51%"
+      },
+      {
+        "tag": "h2",
+        "text": "I could finally tell which load was worth my time without calling anyone to ask."
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/IxhRfl7nKJ7oS5Avx2tFeSzYBk.jpg",
+        "alt": "portrait photography of man wearing black suit jacket"
+      },
+      {
+        "tag": "p",
+        "text": "Tom Aldana"
+      },
+      {
+        "tag": "p",
+        "text": "Chief Innovation Officer"
+      }
+    ]
+  },
+  "work/ledger-expense-approvals": {
+    "title": "Ledger — Expense Approvals for Finance Teams",
+    "intro": [
+      "Ledger handles expense approvals for mid-size companies — an employee submits a receipt, a manager approves or rejects it. About 2,000 companies used it, mostly 50-500 person teams without a dedicated finance ops function.\n\nSubmissions came in fine. Approvals piled up. The average expense sat in a manager's queue for six days before anyone looked at it, and reminders just added a fourth unread notification to the pile.",
+      "Client",
+      "Ledger",
+      "Role",
+      "Product Designer — led design end to end",
+      "Team",
+      "1 PM, 4 engineers, 1 researcher",
+      "Timeline",
+      "Sep 2025 – Jan 2026",
+      "Platforms",
+      "Web, iOS",
+      "Focus",
+      "Approval speed, spend visibility, manager trust",
+      "The Exception-Sorted Approval Queue.",
+      "Approving an expense took longer than filing one.",
+      "A manager opened the queue to a list of merchant names and dollar amounts with no context — was $340 at an unfamiliar vendor a client dinner or something worth questioning? Finding out meant opening each receipt individually, checking the policy, and often messaging the employee directly. Most managers batched all of it for a Friday afternoon they usually didn’t get to.",
+      "",
+      "“I know I’m the bottleneck. I just can’t tell what’s normal without opening every single one.”"
+    ],
+    "body": [
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/rJbA3H2qc1SusDNkpmy1Dc8WuQk.jpg",
+        "alt": "airplanes window view of sky during golden hour"
+      },
+      {
+        "tag": "p",
+        "text": "The Exception-Sorted Approval Queue."
+      },
+      {
+        "tag": "h2",
+        "text": "The challenge"
+      },
+      {
+        "tag": "p",
+        "text": "Approving an expense took longer than filing one."
+      },
+      {
+        "tag": "p",
+        "text": "A manager opened the queue to a list of merchant names and dollar amounts with no context — was $340 at an unfamiliar vendor a client dinner or something worth questioning? Finding out meant opening each receipt individually, checking the policy, and often messaging the employee directly. Most managers batched all of it for a Friday afternoon they usually didn’t get to."
+      },
+      {
+        "tag": "p",
+        "text": "“I know I’m the bottleneck. I just can’t tell what’s normal without opening every single one.”"
+      },
+      {
+        "tag": "p",
+        "text": "— Engineering manager, 40-person team"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/OoemmGnLYp2LlYEKKryT1odcbU.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/Z9VsQ2NQ3XCqifyA2ScVhta6HdU.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/bDRH1jiO8bj6Ax1udK0cKLGy8n4.jpg",
+        "alt": "A lone tree on a grassy hill overlooking a pebble beach and mountains"
+      },
+      {
+        "tag": "p",
+        "text": "The Exception-Sorted Approval Queue."
+      },
+      {
+        "tag": "h2",
+        "text": "The Process"
+      },
+      {
+        "tag": "p",
+        "text": "Timed the actual approval, not the submission. We shadowed six managers for a week. The submission flow was never the problem; every complaint was about the approval side."
+      },
+      {
+        "tag": "p",
+        "text": "Flagged the exceptions, not the whole list. Most expenses were routine and needed zero scrutiny. We built the system to surface only what was unusual against a person’s own history."
+      },
+      {
+        "tag": "p",
+        "text": "Context on the card, not behind a click. Merchant, category, policy match, and the employee’s note all had to be visible without opening anything."
+      },
+      {
+        "tag": "p",
+        "text": "Tested batch approval before building it. We mocked an “approve all routine” button with paper prototypes first, worried it would feel reckless. Every manager we tested it with asked why it didn’t exist yet."
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/7tZLePD6MJyoxX9jEj26iSPUu3M.jpg",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/thKsC4QIvJLz6FU2rpdvZe1EN0.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/idOr3AmrutKaFTf0bKvP3Jni7BE.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/zg9x4AhUCJ0nxikJdfJGUoJuS0.png",
+        "alt": "None"
+      },
+      {
+        "tag": "h2",
+        "text": "Solution"
+      },
+      {
+        "tag": "p",
+        "text": "A queue sorted by exception, not chronology. Anything outside a person’s normal spending pattern surfaces first; everything routine sits below, ready for one action."
+      },
+      {
+        "tag": "p",
+        "text": "Batch-approve the routine ones. One tap clears every unflagged expense at once, with a running total shown before you confirm."
+      },
+      {
+        "tag": "p",
+        "text": "Inline policy match. Each card shows whether the expense fits company policy automatically, so a manager isn’t the one doing the lookup."
+      },
+      {
+        "tag": "p",
+        "text": "A two-tap escalation. Flagging something to finance or asking the employee a question happens without leaving the queue."
+      },
+      {
+        "tag": "h2",
+        "text": "Outcome"
+      },
+      {
+        "tag": "p",
+        "text": "Median time-to-approval dropped from six days to under one day within the first two months. The clearer signal: batch approval accounted for 70% of all approvals by month three — meaning most of a manager’s queue stopped requiring individual attention at all, which is what made the six-day backlog possible in the first place."
+      },
+      {
+        "tag": "p",
+        "text": "What I’d do differently. The exception model was tuned on individual spending history, which worked well for tenured employees and poorly for new hires with no history yet. New employees’ first month of expenses got flagged constantly regardless of how routine they actually were. I’d have shipped a team-level baseline for new hires instead of waiting for them to build their own history."
+      },
+      {
+        "tag": "p",
+        "text": "Median time to approval"
+      },
+      {
+        "tag": "p",
+        "text": "-83%"
+      },
+      {
+        "tag": "p",
+        "text": "Approvals cleared via batch action"
+      },
+      {
+        "tag": "p",
+        "text": "70%"
+      },
+      {
+        "tag": "h2",
+        "text": "My queue used to be a dread. Now it's mostly one tap, and I actually look at the expenses that need me."
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/IxhRfl7nKJ7oS5Avx2tFeSzYBk.jpg",
+        "alt": "portrait photography of man wearing black suit jacket"
+      },
+      {
+        "tag": "p",
+        "text": "Rosa Ferreira"
+      },
+      {
+        "tag": "p",
+        "text": "Chief Innovation Officer"
+      }
+    ]
+  },
+  "work/marrow-packaging-identity-fermentation-kit": {
+    "title": "Marrow — Packaging & Identity for a Fermentation Kit",
+    "intro": [
+      "Marrow sells at-home fermentation kits — cultures, jars, and a guide for making things like kimchi and miso at home. It launched direct-to-consumer with clinical, ingredient-label packaging that tested well for trust but poorly for actually getting picked up off a shelf next to more playful competitors.\n\nPeople who tried a kit loved it and came back. The problem was getting a first-time buyer to pick it up at all.",
+      "Client",
+      "Marrow",
+      "Role",
+      "Visual Designer — led identity and packaging",
+      "Team",
+      "1 Founder, 2 designers, 1 photographer",
+      "Timeline",
+      "Jun – Oct 2025",
+      "Platforms",
+      "Print, Packaging, Web",
+      "Focus",
+      "Shelf presence, first-use confidence, repeat purchase",
+      "The Hand-Drawn Packaging System.",
+      "The packaging looked like a supplement, not a kitchen project.",
+      "Dense ingredient lists and a clinical typeface tested well for trust in early interviews, but on an actual retail shelf next to competitors with hand-drawn illustration and warm color, Marrow read as sterile and intimidating — exactly wrong for a product meant to feel like a fun weekend project, not a medical routine.",
+      "",
+      "“It looked like something my doctor would prescribe, not something I’d want to give as a gift.”"
+    ],
+    "body": [
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/rJbA3H2qc1SusDNkpmy1Dc8WuQk.jpg",
+        "alt": "airplanes window view of sky during golden hour"
+      },
+      {
+        "tag": "p",
+        "text": "The Hand-Drawn Packaging System."
+      },
+      {
+        "tag": "h2",
+        "text": "The challenge"
+      },
+      {
+        "tag": "p",
+        "text": "The packaging looked like a supplement, not a kitchen project."
+      },
+      {
+        "tag": "p",
+        "text": "Dense ingredient lists and a clinical typeface tested well for trust in early interviews, but on an actual retail shelf next to competitors with hand-drawn illustration and warm color, Marrow read as sterile and intimidating — exactly wrong for a product meant to feel like a fun weekend project, not a medical routine."
+      },
+      {
+        "tag": "p",
+        "text": "“It looked like something my doctor would prescribe, not something I’d want to give as a gift.”"
+      },
+      {
+        "tag": "p",
+        "text": "— First-time buyer, in-store intercept interview"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/OoemmGnLYp2LlYEKKryT1odcbU.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/Z9VsQ2NQ3XCqifyA2ScVhta6HdU.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/bDRH1jiO8bj6Ax1udK0cKLGy8n4.jpg",
+        "alt": "A lone tree on a grassy hill overlooking a pebble beach and mountains"
+      },
+      {
+        "tag": "p",
+        "text": "The Hand-Drawn Packaging System."
+      },
+      {
+        "tag": "h2",
+        "text": "The Process"
+      },
+      {
+        "tag": "p",
+        "text": "Watched people shop the actual shelf. We set up a mock retail display with five competitors and Marrow’s existing box and filmed twenty people shopping it. Marrow got picked up last, every time."
+      },
+      {
+        "tag": "p",
+        "text": "Interviewed people who loved the product but never bought it again. The gap wasn’t the kit itself — repeat customers were enthusiastic. It was getting anyone to try it once."
+      },
+      {
+        "tag": "p",
+        "text": "Tested illustration against photography. Early rounds assumed photography would feel more premium. Illustration tested better across every age group we talked to — it read as approachable, not clinical."
+      },
+      {
+        "tag": "p",
+        "text": "Kept the ingredient transparency, changed everything around it. The trust-building ingredient list stayed; the typeface, color, and imagery around it changed completely."
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/7tZLePD6MJyoxX9jEj26iSPUu3M.jpg",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/thKsC4QIvJLz6FU2rpdvZe1EN0.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/idOr3AmrutKaFTf0bKvP3Jni7BE.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/zg9x4AhUCJ0nxikJdfJGUoJuS0.png",
+        "alt": "None"
+      },
+      {
+        "tag": "h2",
+        "text": "Solution"
+      },
+      {
+        "tag": "p",
+        "text": "A hand-drawn identity system. Illustrated jars, vegetables, and bubbling ferment motifs replace the clinical photography across every SKU."
+      },
+      {
+        "tag": "p",
+        "text": "A warm, high-contrast palette. Built to read from three feet away on a crowded shelf, not just up close on a desk."
+      },
+      {
+        "tag": "p",
+        "text": "The ingredient list stayed, redesigned. Full transparency preserved, but set in a friendlier typeface with more breathing room instead of a dense clinical block."
+      },
+      {
+        "tag": "p",
+        "text": "A first-ferment guide printed inside the lid. The most common first-use question — “how do I know it’s working” — answered right where people would see it, not buried in a separate booklet."
+      },
+      {
+        "tag": "h2",
+        "text": "Outcome"
+      },
+      {
+        "tag": "p",
+        "text": "Shelf pickup rate in the mock display test went from last of six to second of six after the redesign. The clearer signal: first-time online purchase conversion rose 44% in the first two months post-launch — the real business goal, since the retail test only mattered as a proxy for getting more people to try the kit at all."
+      },
+      {
+        "tag": "p",
+        "text": "What I’d do differently. The illustration system was built around vegetables common in kimchi and miso, Marrow’s two flagship kits. When they launched a sourdough kit six months later, the existing illustration language didn’t stretch cleanly to bread, and they ended up commissioning a one-off style for it. I’d have designed the system around fermentation as a process from the start, not around specific ingredients."
+      },
+      {
+        "tag": "p",
+        "text": "Shelf pickup rate (mock display test)"
+      },
+      {
+        "tag": "p",
+        "text": "+4 rank"
+      },
+      {
+        "tag": "p",
+        "text": "First-time online purchase conversion"
+      },
+      {
+        "tag": "p",
+        "text": "+44%"
+      },
+      {
+        "tag": "h2",
+        "text": "People stopped picking us up out of curiosity and put us down. Now they actually buy it."
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/IxhRfl7nKJ7oS5Avx2tFeSzYBk.jpg",
+        "alt": "portrait photography of man wearing black suit jacket"
+      },
+      {
+        "tag": "p",
+        "text": "Wren Calloway"
+      },
+      {
+        "tag": "p",
+        "text": "Chief Innovation Officer"
+      }
+    ]
+  },
+  "work/northbound-research-repository": {
+    "title": "Northbound — Research Repository",
+    "intro": [
+      "Northbound is a research repository for product teams — every interview, survey response, and support ticket gets uploaded, tagged, and archived in one place. About 340 teams were using it, mostly mid-market product orgs with a dedicated research function.\n\nUsage was concentrated in the researchers who uploaded the sessions. Most invited teammates — PMs, designers, engineers — never opened the tool again after their first week.",
+      "Client",
+      "Northbound",
+      "Role",
+      "Product Designer — led design end to end",
+      "Team",
+      "1 PM, 3 engineers, 1 researcher",
+      "Timeline",
+      "Mar – Jul 2026",
+      "Platforms",
+      "Web",
+      "Focus",
+      "Findability, cross-team adoption, insight reuse",
+      "The Semantic Search Results View.",
+      "Insights were captured. They were never found again.",
+      "Researchers tagged and archived every session carefully, but a PM searching for “pricing objections” six months later got zero results unless they used that exact tag. So the same question got asked in a brand-new round of interviews instead of pulled from eighteen months of archive already sitting there.",
+      "",
+      "“We have a year and a half of interviews. Nobody outside research has ever opened one.”"
+    ],
+    "body": [
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/rJbA3H2qc1SusDNkpmy1Dc8WuQk.jpg",
+        "alt": "airplanes window view of sky during golden hour"
+      },
+      {
+        "tag": "p",
+        "text": "The Semantic Search Results View."
+      },
+      {
+        "tag": "h2",
+        "text": "The challenge"
+      },
+      {
+        "tag": "p",
+        "text": "Insights were captured. They were never found again."
+      },
+      {
+        "tag": "p",
+        "text": "Researchers tagged and archived every session carefully, but a PM searching for “pricing objections” six months later got zero results unless they used that exact tag. So the same question got asked in a brand-new round of interviews instead of pulled from eighteen months of archive already sitting there."
+      },
+      {
+        "tag": "p",
+        "text": "“We have a year and a half of interviews. Nobody outside research has ever opened one.”"
+      },
+      {
+        "tag": "p",
+        "text": "— PM, growth team"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/OoemmGnLYp2LlYEKKryT1odcbU.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/Z9VsQ2NQ3XCqifyA2ScVhta6HdU.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/bDRH1jiO8bj6Ax1udK0cKLGy8n4.jpg",
+        "alt": "A lone tree on a grassy hill overlooking a pebble beach and mountains"
+      },
+      {
+        "tag": "p",
+        "text": "The Semantic Search Results View."
+      },
+      {
+        "tag": "h2",
+        "text": "The Process"
+      },
+      {
+        "tag": "p",
+        "text": "Search first, browse second. We watched five PMs try to find a specific insight. All five typed a plain-language question into the tag filter, got nothing, and gave up within ninety seconds."
+      },
+      {
+        "tag": "p",
+        "text": "Excerpts, not full sessions. A forty-minute transcript is not an answer. We pulled the actual quote that mattered and let people expand into the full session only if they wanted more."
+      },
+      {
+        "tag": "p",
+        "text": "Killed the mandatory tagging step. It was the single biggest reason researchers fell behind on uploads, and the tags rarely matched how anyone searched later anyway."
+      },
+      {
+        "tag": "p",
+        "text": "Shipped a Slack digest before the search redesign. A weekly “insight of the week” post got non-research roles into the tool for the first time, which told us they wanted answers, not an archive to browse."
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/7tZLePD6MJyoxX9jEj26iSPUu3M.jpg",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/thKsC4QIvJLz6FU2rpdvZe1EN0.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/idOr3AmrutKaFTf0bKvP3Jni7BE.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/zg9x4AhUCJ0nxikJdfJGUoJuS0.png",
+        "alt": "None"
+      },
+      {
+        "tag": "h2",
+        "text": "Solution"
+      },
+      {
+        "tag": "p",
+        "text": "Semantic search across every transcript. Type a plain question and get back the actual passages that answer it, ranked, not a list of sessions matching a tag."
+      },
+      {
+        "tag": "p",
+        "text": "Auto-generated theme clusters. Related excerpts from different interviews group automatically under a plain-language theme, so a pattern across twelve sessions reads as one thing, not twelve."
+      },
+      {
+        "tag": "p",
+        "text": "Inline excerpt cards. Every result shows the quote, who said it, and when, with one click into the full context — no downloading a transcript to find one sentence."
+      },
+      {
+        "tag": "p",
+        "text": "Tagging became optional, not a gate. Researchers could still tag for their own organization, but publishing no longer required it."
+      },
+      {
+        "tag": "h2",
+        "text": "Outcome"
+      },
+      {
+        "tag": "p",
+        "text": "Weekly active reach across non-research roles grew from 12% to 41% over the following three months. The clearer signal: the number of insights cited directly in PRDs and roadmap docs nearly tripled — the actual goal, since a stored insight only matters once it changes a decision."
+      },
+      {
+        "tag": "p",
+        "text": "What I’d do differently. Semantic search surfaced excerpts beautifully but flattened context — a quote about pricing from an enterprise churn interview looked the same as one from a self-serve signup interview. I’d want segment context visible in the result card from day one instead of adding it as a fast-follow once support tickets started asking for it."
+      },
+      {
+        "tag": "p",
+        "text": "Weekly active reach, non-research roles"
+      },
+      {
+        "tag": "p",
+        "text": "+29pts"
+      },
+      {
+        "tag": "p",
+        "text": "Insights cited in PRDs and roadmap docs"
+      },
+      {
+        "tag": "p",
+        "text": "+164%"
+      },
+      {
+        "tag": "h2",
+        "text": "I stopped scheduling a new interview just to re-ask a question we already had an answer to."
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/IxhRfl7nKJ7oS5Avx2tFeSzYBk.jpg",
+        "alt": "portrait photography of man wearing black suit jacket"
+      },
+      {
+        "tag": "p",
+        "text": "Dana Whitfield"
+      },
+      {
+        "tag": "p",
+        "text": "Chief Innovation Officer"
+      }
+    ]
+  },
+  "work/solstice-brand-identity-rooftop-solar": {
+    "title": "Solstice — Brand Identity for Rooftop Solar",
+    "intro": [
+      "Solstice sells and installs residential solar systems. Every deal starts with a sales rep opening a laptop at someone's kitchen table and walking through a quote — panel count, financing, payback period, all on one dense PDF that looked like it came from an accountant, not a company selling a twenty-year decision.\n\nReps closed fine once someone trusted them. Getting a homeowner from \"interested\" to \"signed\" took an average of four separate visits.",
+      "Client",
+      "Solstice",
+      "Role",
+      "Visual Designer — led identity and rollout",
+      "Team",
+      "1 Marketing lead, 2 designers, field sales rep",
+      "Timeline",
+      "Nov 2025 – Feb 2026",
+      "Platforms",
+      "Print, Web, Field sales tablet",
+      "Focus",
+      "Trust, price legibility, sales-team confidence",
+      "The Live Quote Walkthrough.",
+      "The quote looked like a liability waiver.",
+      "Panel counts, degradation curves, financing APRs, and a payback chart were all crammed onto one grayscale page in an 11-point table font. Homeowners didn’t distrust the math — they distrusted a document that looked like nobody had thought about them while making it. So they asked reps to come back with “something to show my spouse,” and a decision that could have happened in one visit stretched into a month of hesitation.",
+      "",
+      "“I believed the numbers. I just didn’t want to sign something that looked like a phone bill.”"
+    ],
+    "body": [
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/rJbA3H2qc1SusDNkpmy1Dc8WuQk.jpg",
+        "alt": "airplanes window view of sky during golden hour"
+      },
+      {
+        "tag": "p",
+        "text": "The Live Quote Walkthrough."
+      },
+      {
+        "tag": "h2",
+        "text": "The challenge"
+      },
+      {
+        "tag": "p",
+        "text": "The quote looked like a liability waiver."
+      },
+      {
+        "tag": "p",
+        "text": "Panel counts, degradation curves, financing APRs, and a payback chart were all crammed onto one grayscale page in an 11-point table font. Homeowners didn’t distrust the math — they distrusted a document that looked like nobody had thought about them while making it. So they asked reps to come back with “something to show my spouse,” and a decision that could have happened in one visit stretched into a month of hesitation."
+      },
+      {
+        "tag": "p",
+        "text": "“I believed the numbers. I just didn’t want to sign something that looked like a phone bill.”"
+      },
+      {
+        "tag": "p",
+        "text": "— Homeowner, post-close interview"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/OoemmGnLYp2LlYEKKryT1odcbU.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/Z9VsQ2NQ3XCqifyA2ScVhta6HdU.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/bDRH1jiO8bj6Ax1udK0cKLGy8n4.jpg",
+        "alt": "A lone tree on a grassy hill overlooking a pebble beach and mountains"
+      },
+      {
+        "tag": "p",
+        "text": "The Live Quote Walkthrough."
+      },
+      {
+        "tag": "h2",
+        "text": "The Process"
+      },
+      {
+        "tag": "p",
+        "text": "Sat in on eleven kitchen-table pitches. We watched where reps improvised — circling numbers by hand, sketching the roof layout on a napkin — and treated those improvisations as the real interface brief."
+      },
+      {
+        "tag": "p",
+        "text": "One number per screen. Payback period, monthly savings, and system size each got their own moment instead of competing for attention on a single dense page."
+      },
+      {
+        "tag": "p",
+        "text": "Designed for a tablet, not a printer. The quote had been built to be printed and left behind. We rebuilt it to be walked through live, with the rep narrating each screen."
+      },
+      {
+        "tag": "p",
+        "text": "Priced the identity, not just the product. A confident, specific brand mark on every panel diagram and invoice mattered as much as the layout — it’s what a homeowner sees on their roof for twenty years."
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/7tZLePD6MJyoxX9jEj26iSPUu3M.jpg",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/thKsC4QIvJLz6FU2rpdvZe1EN0.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/idOr3AmrutKaFTf0bKvP3Jni7BE.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/zg9x4AhUCJ0nxikJdfJGUoJuS0.png",
+        "alt": "None"
+      },
+      {
+        "tag": "h2",
+        "text": "Solution"
+      },
+      {
+        "tag": "p",
+        "text": "A five-screen live quote. System size, savings, payback, financing, and next steps, each with its own clear number and a simple diagram of their actual roof."
+      },
+      {
+        "tag": "p",
+        "text": "An identity built around the sun path. A mark and palette drawn from the arc of sunlight across a roof, applied consistently from the sales tablet to the install crew’s van wrap."
+      },
+      {
+        "tag": "p",
+        "text": "Editable in front of the customer. Reps could adjust panel count or financing term live and watch the numbers update, instead of promising to “send over a revised quote.”"
+      },
+      {
+        "tag": "p",
+        "text": "A one-page leave-behind. For the homeowner who does want something physical, one page, one number per section, printable straight from the tablet."
+      },
+      {
+        "tag": "h2",
+        "text": "Outcome"
+      },
+      {
+        "tag": "p",
+        "text": "Average visits-to-signature dropped from four to just under two over the following quarter. The clearer signal: 61% of deals now closed on the first visit, up from 22% — the actual goal, since every extra visit was a chance for a homeowner to talk themselves out of it."
+      },
+      {
+        "tag": "p",
+        "text": "What I’d do differently. The five-screen flow assumed a rep controlling the pace. A self-serve version for homeowners browsing the website alone needed a different, more guided sequence, and we treated it as a phase two instead of designing both from the same system up front."
+      },
+      {
+        "tag": "p",
+        "text": "Deals closed on the first visit"
+      },
+      {
+        "tag": "p",
+        "text": "+39pts"
+      },
+      {
+        "tag": "p",
+        "text": "Average visits to signature"
+      },
+      {
+        "tag": "p",
+        "text": "-52%"
+      },
+      {
+        "tag": "h2",
+        "text": "Homeowners stopped asking us to come back. We just finished the conversation the first time."
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/IxhRfl7nKJ7oS5Avx2tFeSzYBk.jpg",
+        "alt": "portrait photography of man wearing black suit jacket"
+      },
+      {
+        "tag": "p",
+        "text": "Marcus Ibe"
+      },
+      {
+        "tag": "p",
+        "text": "Chief Innovation Officer"
+      }
+    ]
+  },
+  "work/waypoint-group-trip-planner": {
+    "title": "Waypoint — Group Trip Planner",
+    "intro": [
+      "Waypoint helps friend groups plan trips together — everyone adds places, votes on them, and the group ends up with one shared itinerary instead of a group chat full of screenshots. About 1,200 groups had used it, mostly for trips under two weeks with four to eight people.\n\nPeople added plenty of places. Almost nobody converted a saved place into an actual plan. Itineraries stayed empty even on trips that were three days out.",
+      "Client",
+      "Waypoint",
+      "Role",
+      "Product Designer — led design end to end",
+      "Team",
+      "1 PM, 3 engineers, 1 researcher",
+      "Timeline",
+      "Feb – Jun 2026",
+      "Platforms",
+      "iOS, Android",
+      "Focus",
+      "Group decision-making, plan confidence, reducing chat overhead",
+      "The Group Agreement View.",
+      "Saving a place is easy. Deciding on it is not.",
+      "Every trip started the same way: someone made a list, everyone added ten places to it, and the list just sat there. There was no signal on what the group actually wanted — just a pile of restaurants and viewpoints with no sense of who was excited about what. So the real decision happened somewhere else: a group chat, at 11pm, the night before.",
+      "",
+      "“We had forty saved places and zero plans. We ended up just wandering and hoping.”"
+    ],
+    "body": [
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/rJbA3H2qc1SusDNkpmy1Dc8WuQk.jpg",
+        "alt": "airplanes window view of sky during golden hour"
+      },
+      {
+        "tag": "p",
+        "text": "The Group Agreement View."
+      },
+      {
+        "tag": "h2",
+        "text": "The challenge"
+      },
+      {
+        "tag": "p",
+        "text": "Saving a place is easy. Deciding on it is not."
+      },
+      {
+        "tag": "p",
+        "text": "Every trip started the same way: someone made a list, everyone added ten places to it, and the list just sat there. There was no signal on what the group actually wanted — just a pile of restaurants and viewpoints with no sense of who was excited about what. So the real decision happened somewhere else: a group chat, at 11pm, the night before."
+      },
+      {
+        "tag": "p",
+        "text": "“We had forty saved places and zero plans. We ended up just wandering and hoping.”"
+      },
+      {
+        "tag": "p",
+        "text": "— Beta user, six-person trip to Portugal"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/OoemmGnLYp2LlYEKKryT1odcbU.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/Z9VsQ2NQ3XCqifyA2ScVhta6HdU.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/bDRH1jiO8bj6Ax1udK0cKLGy8n4.jpg",
+        "alt": "A lone tree on a grassy hill overlooking a pebble beach and mountains"
+      },
+      {
+        "tag": "p",
+        "text": "The Group Agreement View."
+      },
+      {
+        "tag": "h2",
+        "text": "The Process"
+      },
+      {
+        "tag": "p",
+        "text": "Votes, not saves. A save says nothing about priority. We replaced the plain save button with a quick yes / maybe / no, so the list carried a signal from day one."
+      },
+      {
+        "tag": "p",
+        "text": "Overlap first. Nobody needs to see all forty places at once. We surfaced where the group actually agreed — the places with the most yeses — before anything else."
+      },
+      {
+        "tag": "p",
+        "text": "Sat in on real group chats. We timed how long it took three friend groups to settle on a single day’s plan by chat alone: 40 minutes, on average, for one day."
+      },
+      {
+        "tag": "p",
+        "text": "Killed the shared notes doc. It was the most-used workaround, and the thing everyone complained about. We built the itinerary to replace it, not sit next to it."
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/7tZLePD6MJyoxX9jEj26iSPUu3M.jpg",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/thKsC4QIvJLz6FU2rpdvZe1EN0.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/idOr3AmrutKaFTf0bKvP3Jni7BE.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/zg9x4AhUCJ0nxikJdfJGUoJuS0.png",
+        "alt": "None"
+      },
+      {
+        "tag": "h2",
+        "text": "Solution"
+      },
+      {
+        "tag": "p",
+        "text": "Group agreement view. Places sorted by how many people voted yes, with avatars showing exactly who’s in."
+      },
+      {
+        "tag": "p",
+        "text": "One-tap itinerary building. Drag an agreed-on place onto a day; Waypoint handles ordering and rough timing automatically."
+      },
+      {
+        "tag": "p",
+        "text": "Live status, not chat. Anyone can see who’s still deciding on what, without asking in the group chat."
+      },
+      {
+        "tag": "p",
+        "text": "Conflict flags. If two people vote opposite ways on a must-do, Waypoint surfaces it early instead of letting it surface the night before."
+      },
+      {
+        "tag": "h2",
+        "text": "Outcome"
+      },
+      {
+        "tag": "p",
+        "text": "Trips that reached a finished itinerary before departure went from 34% to 71% over the following quarter. The clearer signal: median time from first saved place to agreed plan dropped from nine days to three — the actual bottleneck we were designing for, since a list of saved places never booked anything on its own."
+      },
+      {
+        "tag": "p",
+        "text": "What I’d do differently. Voting worked well for groups of four to six. In groups of ten or more, a flat yes / maybe / no flattened into noise and some people stopped voting altogether. I’d want a lighter-weight signal for large groups in v2 instead of the same three-state vote for every group size."
+      },
+      {
+        "tag": "p",
+        "text": "Itineraries finished before departure"
+      },
+      {
+        "tag": "p",
+        "text": "+37pts"
+      },
+      {
+        "tag": "p",
+        "text": "Time from first save to agreed plan"
+      },
+      {
+        "tag": "p",
+        "text": "-67%"
+      },
+      {
+        "tag": "h2",
+        "text": "We stopped scrolling through forty saved places at midnight. Waypoint just showed us where we already agreed."
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/IxhRfl7nKJ7oS5Avx2tFeSzYBk.jpg",
+        "alt": "portrait photography of man wearing black suit jacket"
+      },
+      {
+        "tag": "p",
+        "text": "Priya Anand"
+      },
+      {
+        "tag": "p",
+        "text": "Chief Innovation Officer"
+      }
+    ]
+  },
+  "work/fieldstone-eval-workspace": {
+    "title": "Fieldstone — Eval Workspace",
+    "intro": [
+      "Fieldstone is an evaluation platform for teams shipping LLM features. You write test cases, run them against a prompt or model version, and get scored results back. Around 600 teams were using it — mostly small AI product teams at Series A/B companies.\n\nAcquisition was healthy. Retention past week three was not. Teams set up an eval suite, ran it a few times, and quietly stopped opening the product.",
+      "Client",
+      "Fieldstone",
+      "Role",
+      "Product Designer — led design end to end",
+      "Team",
+      "1 PM, 4 engineers, 2 applied researchers",
+      "Timeline",
+      "Jan – May 2026",
+      "Platforms",
+      "iOS, Android, Web",
+      "Focus",
+      "Collaboration, decision-making, booking confidence",
+      "The Redesigned Shared List Experience.",
+      "Teams could run an eval. They couldn't act on one.",
+      "A run returned a single aggregate: 82% pass. Someone changed a prompt, ran it again, got 79%. That three-point drop was the entire signal — no indication of which behaviors regressed, or whether the drop was real or noise from a flaky grader. So people did the obvious thing: they ignored the number and went back to reading outputs by hand in a spreadsheet.",
+      "",
+      "\"I know something got worse. I have no idea what. So I just re-read fifty outputs myself.\""
+    ],
+    "body": [
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/rJbA3H2qc1SusDNkpmy1Dc8WuQk.jpg",
+        "alt": "airplanes window view of sky during golden hour"
+      },
+      {
+        "tag": "p",
+        "text": "The Redesigned Shared List Experience."
+      },
+      {
+        "tag": "h2",
+        "text": "The challenge"
+      },
+      {
+        "tag": "p",
+        "text": "Teams could run an eval. They couldn't act on one."
+      },
+      {
+        "tag": "p",
+        "text": "A run returned a single aggregate: 82% pass. Someone changed a prompt, ran it again, got 79%. That three-point drop was the entire signal — no indication of which behaviors regressed, or whether the drop was real or noise from a flaky grader. So people did the obvious thing: they ignored the number and went back to reading outputs by hand in a spreadsheet."
+      },
+      {
+        "tag": "p",
+        "text": "\"I know something got worse. I have no idea what. So I just re-read fifty outputs myself.\""
+      },
+      {
+        "tag": "p",
+        "text": "— Staff engineer, 6 months on the platform"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/OoemmGnLYp2LlYEKKryT1odcbU.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/Z9VsQ2NQ3XCqifyA2ScVhta6HdU.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/bDRH1jiO8bj6Ax1udK0cKLGy8n4.jpg",
+        "alt": "A lone tree on a grassy hill overlooking a pebble beach and mountains"
+      },
+      {
+        "tag": "p",
+        "text": "The Redesigned Shared List Experience."
+      },
+      {
+        "tag": "h2",
+        "text": "The Process"
+      },
+      {
+        "tag": "p",
+        "text": "Comparison, not the run. Nobody cares about one run — they care about what changed. Two runs side by side became the default view."
+      },
+      {
+        "tag": "p",
+        "text": "Failures grouped by behavior. 400 failing rows have no shape. We clustered them by what went wrong — refusals, hallucinated citations, format breaks. Twelve clusters instead of 400 rows."
+      },
+      {
+        "tag": "p",
+        "text": "Manual grading first. Teams didn't trust LLM-as-judge scores. You hand-grade twenty examples, then see where the auto-grader agreed. Setup got slower on purpose."
+      },
+      {
+        "tag": "p",
+        "text": "Deleted the metrics dashboard. Most-visited screen, least useful. We removed it behind a flag for a month; nobody asked for it back."
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/7tZLePD6MJyoxX9jEj26iSPUu3M.jpg",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/thKsC4QIvJLz6FU2rpdvZe1EN0.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/idOr3AmrutKaFTf0bKvP3Jni7BE.png",
+        "alt": "None"
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/zg9x4AhUCJ0nxikJdfJGUoJuS0.png",
+        "alt": "None"
+      },
+      {
+        "tag": "h2",
+        "text": "Solution"
+      },
+      {
+        "tag": "p",
+        "text": "Run comparison as the default view. Open a project and you land on the last two runs, diffed, sorted by largest behavioral change. The aggregate score is still there, in small type, at the top right."
+      },
+      {
+        "tag": "p",
+        "text": "Failure clusters. Grouped by behavior, each with a plain-language label, a count, a delta against the previous run, and three representative examples inline."
+      },
+      {
+        "tag": "p",
+        "text": "Keyboard-first grading. J/K to move, 1–3 to score, one modal, no page loads. Grading twenty examples takes about four minutes."
+      },
+      {
+        "tag": "p",
+        "text": "Trace panel. One click from any failed case to the full input, output, grader reasoning, and token-level cost — so you can check whether the grader was wrong before you go fix the prompt."
+      },
+      {
+        "tag": "h2",
+        "text": "Outcome"
+      },
+      {
+        "tag": "p",
+        "text": "Week-6 retention went from 31% to 58% over the two months following release. The clearer signal: the number of teams running evals in CI more than doubled, which was the behavior we were actually designing for — evals only pay off if they run on every change, not when someone remembers."
+      },
+      {
+        "tag": "p",
+        "text": "What I'd do differently. The failure clustering was built on a taxonomy the researchers wrote, and it's excellent for chat and RAG products. It's poor for agentic workflows, where the failure is usually a wrong sequence of tool calls, not a bad output. We shipped knowing that and it became the top support request within six weeks. I should have pushed to make clusters user-definable in v1 instead of treating it as a fast-follow."
+      },
+      {
+        "tag": "p",
+        "text": "Collaborative-list engagement"
+      },
+      {
+        "tag": "p",
+        "text": "+18%"
+      },
+      {
+        "tag": "p",
+        "text": "Return visits to shared lists within 7 days"
+      },
+      {
+        "tag": "p",
+        "text": "+24%"
+      },
+      {
+        "tag": "h2",
+        "text": "We stopped sending twenty links back and forth. Everyone could see what was still in the running."
+      },
+      {
+        "tag": "img",
+        "src": "/templates/rhys/media/IxhRfl7nKJ7oS5Avx2tFeSzYBk.jpg",
+        "alt": "portrait photography of man wearing black suit jacket"
+      },
+      {
+        "tag": "p",
+        "text": "Meadea John"
+      },
+      {
+        "tag": "p",
+        "text": "Chief Innovation Officer"
+      }
+    ]
+  }
+}

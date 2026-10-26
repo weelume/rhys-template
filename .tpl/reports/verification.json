@@ -1,0 +1,87 @@
+{
+  "$schema": "../schemas/verification.schema.json",
+  "format": "git-template-verification",
+  "formatVersion": "0.2.0",
+  "status": "passed",
+  "checkedAt": "2026-10-26T09:59:40.632Z",
+  "sourceCommit": null,
+  "sourceDigest": "a5d3fb9e110129463dfa4b01ec7665f31c84d42ffd0b8a3754dbc20465744b78",
+  "environment": {
+    "platform": "linux (local WSL)",
+    "arch": "x64",
+    "node": "24.16.0",
+    "packageManager": "9.15.4",
+    "cleanDirectory": true,
+    "localGitClone": false
+  },
+  "checks": [
+    {
+      "id": "typecheck",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "typecheck"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-26T09:56:02.546Z",
+      "finishedAt": "2026-10-26T09:56:04.339Z"
+    },
+    {
+      "id": "lint",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "lint"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-26T09:56:04.344Z",
+      "finishedAt": "2026-10-26T09:56:07.020Z"
+    },
+    {
+      "id": "test",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "test"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-26T09:56:07.025Z",
+      "finishedAt": "2026-10-26T09:56:07.749Z"
+    },
+    {
+      "id": "build",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "build"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-26T09:56:07.751Z",
+      "finishedAt": "2026-10-26T09:56:25.401Z"
+    }
+  ],
+  "services": [
+    {
+      "id": "web",
+      "status": "passed",
+      "stopped": true,
+      "checkedAt": "2026-10-26T09:56:26.453Z",
+      "reason": "独立候选生产实例 42 条双语路由均 HTTP 200，验收后停止自有进程。"
+    }
+  ],
+  "limitations": [
+    "原站全部页面的三端动效尚未逐项逐帧核对；页面转场、贴纸光影与几何、轮播原始间隔和拖拽速度曲线未完整对照，不能宣称所有动效一致。",
+    "系统减少动态效果实际模拟、触控惯性与滚动条滑块拖动未完整验证。",
+    "参考站素材商业再分发许可未确认，listed=false、redistributionAllowed=false。",
+    "验收来自独立 Linux 目录但不是干净本地 Git 克隆；源码与检查摘要绑定。",
+    "中文正文为本地化整理，字体按规范替换为 Poppins / MiSans；新增政策页不属于原站。"
+  ]
+}

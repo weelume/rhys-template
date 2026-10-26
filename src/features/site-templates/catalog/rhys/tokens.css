@@ -1,0 +1,9 @@
+[data-template='rhys'] {
+  --tpl-paper:#f7f5f2; --tpl-ink:#232526; --tpl-muted:#787b7b; --tpl-charcoal:#383e42;
+  --tpl-orange:#ffab53; --tpl-blue:#cce6f7; --tpl-mint:#c9e7de; --tpl-yellow:#ffdb86; --tpl-green:#d9f2ae; --tpl-lilac:#cccbff;
+  --tpl-font:RhysPoppins,MiSans,sans-serif; --tpl-heading:clamp(28px,3.1vw,44px); --tpl-section-title:clamp(24px,3vw,36px);
+  --tpl-body:16px; --tpl-line:1.8; --tpl-radius:20px; --tpl-card-radius:24px; --tpl-max:1320px;
+  --tpl-space:clamp(72px,10vw,152px); --tpl-gap:32px; --tpl-border:rgba(35,37,38,.18);
+  --tpl-glass:linear-gradient(135deg,rgba(255,255,255,.68),rgba(255,255,255,.15)); --tpl-glass-border:rgba(255,255,255,.5); --tpl-shadow:0 12px 35px rgba(35,37,38,.05);
+  --tpl-scroll-track:#f7f5f2; --tpl-scroll-thumb:#aeb2b3; --tpl-scroll-hover:#777e81; --tpl-scroll-size:9px; --tpl-scroll-radius:12px;
+}

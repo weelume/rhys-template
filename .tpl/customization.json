@@ -1,0 +1,107 @@
+{
+  "format": "git-template-customization",
+  "formatVersion": "0.2.0",
+  "entries": [
+    {
+      "id": "brand",
+      "title": "品牌与联系方式",
+      "description": "品牌与联系方式",
+      "files": [
+        {
+          "path": "src/features/site-templates/catalog/rhys/config/brand.ts",
+          "kind": "file",
+          "purpose": "品牌与联系方式"
+        }
+      ],
+      "constraints": [
+        "保持双语完整与素材本地托管，不添加未授权依赖"
+      ],
+      "checks": [
+        "typecheck",
+        "lint",
+        "test"
+      ]
+    },
+    {
+      "id": "content",
+      "title": "双语内容与项目",
+      "description": "双语内容与项目",
+      "files": [
+        {
+          "path": "src/features/site-templates/catalog/rhys/content",
+          "kind": "directory",
+          "purpose": "双语内容与项目"
+        }
+      ],
+      "constraints": [
+        "保持双语完整与素材本地托管，不添加未授权依赖"
+      ],
+      "checks": [
+        "typecheck",
+        "lint",
+        "test"
+      ]
+    },
+    {
+      "id": "theme",
+      "title": "主题与响应式布局",
+      "description": "主题与响应式布局",
+      "files": [
+        {
+          "path": "src/features/site-templates/catalog/rhys/theme.css",
+          "kind": "file",
+          "purpose": "主题与响应式布局"
+        }
+      ],
+      "constraints": [
+        "保持双语完整与素材本地托管，不添加未授权依赖"
+      ],
+      "checks": [
+        "typecheck",
+        "lint",
+        "test"
+      ]
+    },
+    {
+      "id": "motion",
+      "title": "动效与交互",
+      "description": "动效与交互",
+      "files": [
+        {
+          "path": "src/features/site-templates/catalog/rhys/components",
+          "kind": "directory",
+          "purpose": "动效与交互"
+        }
+      ],
+      "constraints": [
+        "保持双语完整与素材本地托管，不添加未授权依赖"
+      ],
+      "checks": [
+        "typecheck",
+        "lint",
+        "test"
+      ]
+    },
+    {
+      "id": "pages",
+      "title": "页面组合与路由",
+      "description": "页面组合与路由",
+      "files": [
+        {
+          "path": "src/features/site-templates/catalog/rhys/pages",
+          "kind": "directory",
+          "purpose": "页面组合与路由"
+        }
+      ],
+      "constraints": [
+        "保持双语完整与素材本地托管，不添加未授权依赖"
+      ],
+      "checks": [
+        "typecheck",
+        "lint",
+        "test"
+      ]
+    }
+  ],
+  "$schema": "./schemas/customization.schema.json"
+}

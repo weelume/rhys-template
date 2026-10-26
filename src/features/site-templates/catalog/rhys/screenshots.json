@@ -1,0 +1,86 @@
+[
+  {
+    "src": "/templates/rhys/screenshots/desktop-home.webp",
+    "alt": "Rhys desktop home",
+    "device": "desktop",
+    "width": 1430,
+    "height": 993
+  },
+  {
+    "src": "/templates/rhys/screenshots/desktop-work.webp",
+    "alt": "Rhys desktop work",
+    "device": "desktop",
+    "width": 1430,
+    "height": 993
+  },
+  {
+    "src": "/templates/rhys/screenshots/desktop-notes.webp",
+    "alt": "Rhys desktop notes",
+    "device": "desktop",
+    "width": 1430,
+    "height": 993
+  },
+  {
+    "src": "/templates/rhys/screenshots/desktop-contact.webp",
+    "alt": "Rhys desktop contact",
+    "device": "desktop",
+    "width": 1430,
+    "height": 993
+  },
+  {
+    "src": "/templates/rhys/screenshots/tablet-home.webp",
+    "alt": "Rhys tablet home",
+    "device": "tablet",
+    "width": 824,
+    "height": 1166
+  },
+  {
+    "src": "/templates/rhys/screenshots/tablet-work.webp",
+    "alt": "Rhys tablet work",
+    "device": "tablet",
+    "width": 824,
+    "height": 1166
+  },
+  {
+    "src": "/templates/rhys/screenshots/tablet-notes.webp",
+    "alt": "Rhys tablet notes",
+    "device": "tablet",
+    "width": 824,
+    "height": 1166
+  },
+  {
+    "src": "/templates/rhys/screenshots/tablet-contact.webp",
+    "alt": "Rhys tablet contact",
+    "device": "tablet",
+    "width": 824,
+    "height": 1166
+  },
+  {
+    "src": "/templates/rhys/screenshots/mobile-home.webp",
+    "alt": "Rhys mobile home",
+    "device": "mobile",
+    "width": 380,
+    "height": 822
+  },
+  {
+    "src": "/templates/rhys/screenshots/mobile-work.webp",
+    "alt": "Rhys mobile work",
+    "device": "mobile",
+    "width": 380,
+    "height": 822
+  },
+  {
+    "src": "/templates/rhys/screenshots/mobile-notes.webp",
+    "alt": "Rhys mobile notes",
+    "device": "mobile",
+    "width": 380,
+    "height": 822
+  },
+  {
+    "src": "/templates/rhys/screenshots/mobile-contact.webp",
+    "alt": "Rhys mobile contact",
+    "device": "mobile",
+    "width": 380,
+    "height": 822
+  }
+]

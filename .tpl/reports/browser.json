@@ -1,0 +1,2276 @@
+{
+  "checkedAt": "2026-10-26T09:59:40.179Z",
+  "routes": [
+    {
+      "width": 1440,
+      "locale": "zh",
+      "slug": "",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "首页 · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "slug": "work",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "作品 · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "slug": "about",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "关于 · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "slug": "notes",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "随笔 · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "slug": "exploration",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "探索 · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "slug": "work/waypoint-group-trip-planner",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Waypoint · 团体旅行规划 · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "slug": "work/solstice-brand-identity-rooftop-solar",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Solstice · 屋顶太阳能品牌 · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "slug": "work/ledger-expense-approvals",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Ledger · 费用审批 · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "slug": "work/northbound-research-repository",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Northbound · 研究资料库 · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "slug": "work/harbor-onboarding-freight-marketplace",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Harbor · 货运市场入驻 · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "slug": "work/marrow-packaging-identity-fermentation-kit",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Marrow · 发酵套装包装 · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "slug": "work/compass-usability-testing-ops",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Compass · 可用性测试运营 · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "slug": "work/fieldstone-eval-workspace",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Fieldstone · 协作评估空间 · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "slug": "notes/the-best-tool-i-turned-off",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "今年最好用的工具 是我关掉的那一个 · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "slug": "notes/i-stopped-asking-the-model-to-be-creative",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "不再要求模型发挥创意 它反而更有用了 · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "slug": "notes/the-roadmap-review-we-replaced",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "我们用五分钟站会 代替路线图评审 · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "slug": "notes/a-component-isnt-reusable-until-broken",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "被别人用坏之前 组件还谈不上可复用 · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "slug": "notes/most-research-fails-in-the-readout",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "研究往往不败在访谈 而败在汇报 · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "slug": "notes/the-last-ten-percent-is-a-different-skill",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "最后百分之十 需要另一种能力 · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "slug": "privacy",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "隐私政策 · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "slug": "terms",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "使用条款 · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "slug": "",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Home · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "slug": "work",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Work · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "slug": "about",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "About · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "slug": "notes",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Notes · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "slug": "exploration",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Exploration · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "slug": "work/waypoint-group-trip-planner",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Waypoint — Group Trip Planner · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "slug": "work/solstice-brand-identity-rooftop-solar",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Solstice — Brand Identity for Rooftop Solar · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "slug": "work/ledger-expense-approvals",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Ledger — Expense Approvals · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "slug": "work/northbound-research-repository",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Northbound — Research Repository · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "slug": "work/harbor-onboarding-freight-marketplace",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Harbor — Onboarding for a Freight Marketplace · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "slug": "work/marrow-packaging-identity-fermentation-kit",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Marrow — Packaging Identity for a Fermentation Kit · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "slug": "work/compass-usability-testing-ops",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Compass — Usability Testing Ops · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "slug": "work/fieldstone-eval-workspace",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Fieldstone — Eval Workspace · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "slug": "notes/the-best-tool-i-turned-off",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "The best tool I used this year was the one I turned off · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "slug": "notes/i-stopped-asking-the-model-to-be-creative",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "I stopped asking the model to be creative, and it got more useful · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "slug": "notes/the-roadmap-review-we-replaced",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "The roadmap review we replaced with a five-minute standup · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "slug": "notes/a-component-isnt-reusable-until-broken",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "A component isn’t reusable until someone else has broken it · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "slug": "notes/most-research-fails-in-the-readout",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Most research doesn’t fail in the interview. It fails in the readout. · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "slug": "notes/the-last-ten-percent-is-a-different-skill",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "The last ten percent is a different skill than the first ninety · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "slug": "privacy",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Privacy · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "slug": "terms",
+      "broken": [],
+      "h": 1000,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Terms · Rhys Studio",
+      "w": 1440
+    },
+    {
+      "width": 834,
+      "locale": "zh",
+      "slug": "",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "首页 · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "zh",
+      "slug": "work",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "作品 · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "zh",
+      "slug": "about",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "关于 · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "zh",
+      "slug": "notes",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "随笔 · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "zh",
+      "slug": "exploration",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "探索 · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "zh",
+      "slug": "work/waypoint-group-trip-planner",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Waypoint · 团体旅行规划 · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "zh",
+      "slug": "work/solstice-brand-identity-rooftop-solar",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Solstice · 屋顶太阳能品牌 · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "zh",
+      "slug": "work/ledger-expense-approvals",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Ledger · 费用审批 · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "zh",
+      "slug": "work/northbound-research-repository",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Northbound · 研究资料库 · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "zh",
+      "slug": "work/harbor-onboarding-freight-marketplace",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Harbor · 货运市场入驻 · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "zh",
+      "slug": "work/marrow-packaging-identity-fermentation-kit",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Marrow · 发酵套装包装 · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "zh",
+      "slug": "work/compass-usability-testing-ops",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Compass · 可用性测试运营 · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "zh",
+      "slug": "work/fieldstone-eval-workspace",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Fieldstone · 协作评估空间 · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "zh",
+      "slug": "notes/the-best-tool-i-turned-off",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "今年最好用的工具 是我关掉的那一个 · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "zh",
+      "slug": "notes/i-stopped-asking-the-model-to-be-creative",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "不再要求模型发挥创意 它反而更有用了 · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "zh",
+      "slug": "notes/the-roadmap-review-we-replaced",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "我们用五分钟站会 代替路线图评审 · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "zh",
+      "slug": "notes/a-component-isnt-reusable-until-broken",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "被别人用坏之前 组件还谈不上可复用 · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "zh",
+      "slug": "notes/most-research-fails-in-the-readout",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "研究往往不败在访谈 而败在汇报 · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "zh",
+      "slug": "notes/the-last-ten-percent-is-a-different-skill",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "最后百分之十 需要另一种能力 · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "zh",
+      "slug": "privacy",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "隐私政策 · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "zh",
+      "slug": "terms",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "使用条款 · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "en",
+      "slug": "",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Home · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "en",
+      "slug": "work",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Work · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "en",
+      "slug": "about",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "About · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "en",
+      "slug": "notes",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Notes · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "en",
+      "slug": "exploration",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Exploration · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "en",
+      "slug": "work/waypoint-group-trip-planner",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Waypoint — Group Trip Planner · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "en",
+      "slug": "work/solstice-brand-identity-rooftop-solar",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Solstice — Brand Identity for Rooftop Solar · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "en",
+      "slug": "work/ledger-expense-approvals",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Ledger — Expense Approvals · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "en",
+      "slug": "work/northbound-research-repository",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Northbound — Research Repository · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "en",
+      "slug": "work/harbor-onboarding-freight-marketplace",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Harbor — Onboarding for a Freight Marketplace · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "en",
+      "slug": "work/marrow-packaging-identity-fermentation-kit",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Marrow — Packaging Identity for a Fermentation Kit · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "en",
+      "slug": "work/compass-usability-testing-ops",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Compass — Usability Testing Ops · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "en",
+      "slug": "work/fieldstone-eval-workspace",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Fieldstone — Eval Workspace · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "en",
+      "slug": "notes/the-best-tool-i-turned-off",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "The best tool I used this year was the one I turned off · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "en",
+      "slug": "notes/i-stopped-asking-the-model-to-be-creative",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "I stopped asking the model to be creative, and it got more useful · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "en",
+      "slug": "notes/the-roadmap-review-we-replaced",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "The roadmap review we replaced with a five-minute standup · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "en",
+      "slug": "notes/a-component-isnt-reusable-until-broken",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "A component isn’t reusable until someone else has broken it · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "en",
+      "slug": "notes/most-research-fails-in-the-readout",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Most research doesn’t fail in the interview. It fails in the readout. · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "en",
+      "slug": "notes/the-last-ten-percent-is-a-different-skill",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "The last ten percent is a different skill than the first ninety · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "en",
+      "slug": "privacy",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Privacy · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 834,
+      "locale": "en",
+      "slug": "terms",
+      "broken": [],
+      "h": 1180,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Terms · Rhys Studio",
+      "w": 834
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "slug": "",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "首页 · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "slug": "work",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "作品 · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "slug": "about",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "关于 · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "slug": "notes",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "随笔 · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "slug": "exploration",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "探索 · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "slug": "work/waypoint-group-trip-planner",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Waypoint · 团体旅行规划 · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "slug": "work/solstice-brand-identity-rooftop-solar",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Solstice · 屋顶太阳能品牌 · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "slug": "work/ledger-expense-approvals",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Ledger · 费用审批 · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "slug": "work/northbound-research-repository",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Northbound · 研究资料库 · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "slug": "work/harbor-onboarding-freight-marketplace",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Harbor · 货运市场入驻 · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "slug": "work/marrow-packaging-identity-fermentation-kit",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Marrow · 发酵套装包装 · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "slug": "work/compass-usability-testing-ops",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Compass · 可用性测试运营 · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "slug": "work/fieldstone-eval-workspace",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Fieldstone · 协作评估空间 · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "slug": "notes/the-best-tool-i-turned-off",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "今年最好用的工具 是我关掉的那一个 · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "slug": "notes/i-stopped-asking-the-model-to-be-creative",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "不再要求模型发挥创意 它反而更有用了 · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "slug": "notes/the-roadmap-review-we-replaced",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "我们用五分钟站会 代替路线图评审 · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "slug": "notes/a-component-isnt-reusable-until-broken",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "被别人用坏之前 组件还谈不上可复用 · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "slug": "notes/most-research-fails-in-the-readout",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "研究往往不败在访谈 而败在汇报 · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "slug": "notes/the-last-ten-percent-is-a-different-skill",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "最后百分之十 需要另一种能力 · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "slug": "privacy",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "隐私政策 · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "slug": "terms",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "使用条款 · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "slug": "",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Home · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "slug": "work",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Work · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "slug": "about",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "About · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "slug": "notes",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Notes · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "slug": "exploration",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Exploration · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "slug": "work/waypoint-group-trip-planner",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Waypoint — Group Trip Planner · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "slug": "work/solstice-brand-identity-rooftop-solar",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Solstice — Brand Identity for Rooftop Solar · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "slug": "work/ledger-expense-approvals",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Ledger — Expense Approvals · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "slug": "work/northbound-research-repository",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Northbound — Research Repository · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "slug": "work/harbor-onboarding-freight-marketplace",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Harbor — Onboarding for a Freight Marketplace · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "slug": "work/marrow-packaging-identity-fermentation-kit",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Marrow — Packaging Identity for a Fermentation Kit · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "slug": "work/compass-usability-testing-ops",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Compass — Usability Testing Ops · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "slug": "work/fieldstone-eval-workspace",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Fieldstone — Eval Workspace · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "slug": "notes/the-best-tool-i-turned-off",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "The best tool I used this year was the one I turned off · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "slug": "notes/i-stopped-asking-the-model-to-be-creative",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "I stopped asking the model to be creative, and it got more useful · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "slug": "notes/the-roadmap-review-we-replaced",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "The roadmap review we replaced with a five-minute standup · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "slug": "notes/a-component-isnt-reusable-until-broken",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "A component isn’t reusable until someone else has broken it · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "slug": "notes/most-research-fails-in-the-readout",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Most research doesn’t fail in the interview. It fails in the readout. · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "slug": "notes/the-last-ten-percent-is-a-different-skill",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "The last ten percent is a different skill than the first ninety · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "slug": "privacy",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Privacy · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "slug": "terms",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Terms · Rhys Studio",
+      "w": 390
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "slug": "",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "首页 · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "slug": "work",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "作品 · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "slug": "about",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "关于 · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "slug": "notes",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "随笔 · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "slug": "exploration",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "探索 · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "slug": "work/waypoint-group-trip-planner",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Waypoint · 团体旅行规划 · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "slug": "work/solstice-brand-identity-rooftop-solar",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Solstice · 屋顶太阳能品牌 · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "slug": "work/ledger-expense-approvals",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Ledger · 费用审批 · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "slug": "work/northbound-research-repository",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Northbound · 研究资料库 · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "slug": "work/harbor-onboarding-freight-marketplace",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Harbor · 货运市场入驻 · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "slug": "work/marrow-packaging-identity-fermentation-kit",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Marrow · 发酵套装包装 · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "slug": "work/compass-usability-testing-ops",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Compass · 可用性测试运营 · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "slug": "work/fieldstone-eval-workspace",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Fieldstone · 协作评估空间 · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "slug": "notes/the-best-tool-i-turned-off",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "今年最好用的工具 是我关掉的那一个 · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "slug": "notes/i-stopped-asking-the-model-to-be-creative",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "不再要求模型发挥创意 它反而更有用了 · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "slug": "notes/the-roadmap-review-we-replaced",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "我们用五分钟站会 代替路线图评审 · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "slug": "notes/a-component-isnt-reusable-until-broken",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "被别人用坏之前 组件还谈不上可复用 · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "slug": "notes/most-research-fails-in-the-readout",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "研究往往不败在访谈 而败在汇报 · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "slug": "notes/the-last-ten-percent-is-a-different-skill",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "最后百分之十 需要另一种能力 · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "slug": "privacy",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "隐私政策 · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "slug": "terms",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "使用条款 · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "en",
+      "slug": "",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Home · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "en",
+      "slug": "work",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Work · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "en",
+      "slug": "about",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "About · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "en",
+      "slug": "notes",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Notes · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "en",
+      "slug": "exploration",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Exploration · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "en",
+      "slug": "work/waypoint-group-trip-planner",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Waypoint — Group Trip Planner · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "en",
+      "slug": "work/solstice-brand-identity-rooftop-solar",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Solstice — Brand Identity for Rooftop Solar · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "en",
+      "slug": "work/ledger-expense-approvals",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Ledger — Expense Approvals · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "en",
+      "slug": "work/northbound-research-repository",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Northbound — Research Repository · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "en",
+      "slug": "work/harbor-onboarding-freight-marketplace",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Harbor — Onboarding for a Freight Marketplace · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "en",
+      "slug": "work/marrow-packaging-identity-fermentation-kit",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Marrow — Packaging Identity for a Fermentation Kit · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "en",
+      "slug": "work/compass-usability-testing-ops",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Compass — Usability Testing Ops · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "en",
+      "slug": "work/fieldstone-eval-workspace",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Fieldstone — Eval Workspace · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "en",
+      "slug": "notes/the-best-tool-i-turned-off",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "The best tool I used this year was the one I turned off · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "en",
+      "slug": "notes/i-stopped-asking-the-model-to-be-creative",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "I stopped asking the model to be creative, and it got more useful · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "en",
+      "slug": "notes/the-roadmap-review-we-replaced",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "The roadmap review we replaced with a five-minute standup · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "en",
+      "slug": "notes/a-component-isnt-reusable-until-broken",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "A component isn’t reusable until someone else has broken it · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "en",
+      "slug": "notes/most-research-fails-in-the-readout",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Most research doesn’t fail in the interview. It fails in the readout. · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "en",
+      "slug": "notes/the-last-ten-percent-is-a-different-skill",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "The last ten percent is a different skill than the first ninety · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "en",
+      "slug": "privacy",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Privacy · Rhys Studio",
+      "w": 320
+    },
+    {
+      "width": 320,
+      "locale": "en",
+      "slug": "terms",
+      "broken": [],
+      "h": 844,
+      "h1": 1,
+      "overflow": 0,
+      "title": "Terms · Rhys Studio",
+      "w": 320
+    }
+  ],
+  "screenshots": [
+    {
+      "device": "desktop",
+      "page": "home",
+      "viewport": {
+        "w": 1440,
+        "h": 1000
+      },
+      "file": "desktop-home.jpg",
+      "width": 1430,
+      "height": 993,
+      "format": "jpeg",
+      "output": "desktop-home.webp"
+    },
+    {
+      "device": "desktop",
+      "page": "work",
+      "viewport": {
+        "w": 1440,
+        "h": 1000
+      },
+      "file": "desktop-work.jpg",
+      "width": 1430,
+      "height": 993,
+      "format": "jpeg",
+      "output": "desktop-work.webp"
+    },
+    {
+      "device": "desktop",
+      "page": "notes",
+      "viewport": {
+        "w": 1440,
+        "h": 1000
+      },
+      "file": "desktop-notes.jpg",
+      "width": 1430,
+      "height": 993,
+      "format": "jpeg",
+      "output": "desktop-notes.webp"
+    },
+    {
+      "device": "desktop",
+      "page": "contact",
+      "viewport": {
+        "w": 1440,
+        "h": 1000
+      },
+      "file": "desktop-contact.jpg",
+      "width": 1430,
+      "height": 993,
+      "format": "jpeg",
+      "output": "desktop-contact.webp"
+    },
+    {
+      "device": "tablet",
+      "page": "home",
+      "viewport": {
+        "w": 834,
+        "h": 1180
+      },
+      "file": "tablet-home.jpg",
+      "width": 824,
+      "height": 1166,
+      "format": "jpeg",
+      "output": "tablet-home.webp"
+    },
+    {
+      "device": "tablet",
+      "page": "work",
+      "viewport": {
+        "w": 834,
+        "h": 1180
+      },
+      "file": "tablet-work.jpg",
+      "width": 824,
+      "height": 1166,
+      "format": "jpeg",
+      "output": "tablet-work.webp"
+    },
+    {
+      "device": "tablet",
+      "page": "notes",
+      "viewport": {
+        "w": 834,
+        "h": 1180
+      },
+      "file": "tablet-notes.jpg",
+      "width": 824,
+      "height": 1166,
+      "format": "jpeg",
+      "output": "tablet-notes.webp"
+    },
+    {
+      "device": "tablet",
+      "page": "contact",
+      "viewport": {
+        "w": 834,
+        "h": 1180
+      },
+      "file": "tablet-contact.jpg",
+      "width": 824,
+      "height": 1166,
+      "format": "jpeg",
+      "output": "tablet-contact.webp"
+    },
+    {
+      "device": "mobile",
+      "page": "home",
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "file": "mobile-home.jpg",
+      "width": 380,
+      "height": 822,
+      "format": "jpeg",
+      "output": "mobile-home.webp"
+    },
+    {
+      "device": "mobile",
+      "page": "work",
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "file": "mobile-work.jpg",
+      "width": 380,
+      "height": 822,
+      "format": "jpeg",
+      "output": "mobile-work.webp"
+    },
+    {
+      "device": "mobile",
+      "page": "notes",
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "file": "mobile-notes.jpg",
+      "width": 380,
+      "height": 822,
+      "format": "jpeg",
+      "output": "mobile-notes.webp"
+    },
+    {
+      "device": "mobile",
+      "page": "contact",
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "file": "mobile-contact.jpg",
+      "width": 380,
+      "height": 822,
+      "format": "jpeg",
+      "output": "mobile-contact.webp"
+    }
+  ],
+  "motion": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "initial": {
+        "badge": null,
+        "cards": [
+          {
+            "opacity": "0",
+            "transform": "matrix(0.970296, -0.241922, 0.241922, 0.970296, -14, 180)"
+          },
+          {
+            "opacity": "0",
+            "transform": "matrix(0.992546, -0.121869, 0.121869, 0.992546, -7, 180)"
+          },
+          {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 180)"
+          },
+          {
+            "opacity": "0",
+            "transform": "matrix(0.992546, 0.121869, -0.121869, 0.992546, 7, 180)"
+          },
+          {
+            "opacity": "0",
+            "transform": "matrix(0.970296, 0.241922, -0.241922, 0.970296, 14, 180)"
+          }
+        ],
+        "videos": [
+          {
+            "paused": true,
+            "ready": 4,
+            "time": 0
+          },
+          {
+            "paused": true,
+            "ready": 4,
+            "time": 0
+          }
+        ]
+      },
+      "running": {
+        "badge": "transform: rotate(42.33deg);",
+        "cards": [
+          {
+            "opacity": "1",
+            "transform": "matrix(0.963189, -0.268825, 0.268825, 0.963189, -28.9673, 0)"
+          },
+          {
+            "opacity": "1",
+            "transform": "matrix(0.990755, -0.135667, 0.135667, 0.990755, -14.4836, 0)"
+          },
+          {
+            "opacity": "1",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "transform": "matrix(0.990755, 0.135667, -0.135667, 0.990755, 14.4836, 0)"
+          },
+          {
+            "opacity": "1",
+            "transform": "matrix(0.963189, 0.268825, -0.268825, 0.963189, 28.9673, 0)"
+          }
+        ],
+        "videos": [
+          {
+            "paused": false,
+            "ready": 4,
+            "time": 1.340676
+          },
+          {
+            "paused": false,
+            "ready": 4,
+            "time": 1.3954
+          }
+        ]
+      },
+      "carouselThird": "true",
+      "tickerFocus": "paused"
+    },
+    {
+      "width": 834,
+      "height": 1180,
+      "initial": {
+        "badge": null,
+        "cards": [
+          {
+            "opacity": "0",
+            "transform": "matrix(0.960695, -0.277604, 0.277604, 0.960695, -33.8765, 180)"
+          },
+          {
+            "opacity": "0",
+            "transform": "matrix(0.990125, -0.140187, 0.140187, 0.990125, -16.9383, 180)"
+          },
+          {
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 180)"
+          },
+          {
+            "opacity": "0",
+            "transform": "matrix(0.990125, 0.140187, -0.140187, 0.990125, 16.9383, 180)"
+          },
+          {
+            "opacity": "0",
+            "transform": "matrix(0.960695, 0.277604, -0.277604, 0.960695, 33.8765, 180)"
+          }
+        ],
+        "videos": [
+          {
+            "paused": true,
+            "ready": 4,
+            "time": 0
+          },
+          {
+            "paused": true,
+            "ready": 4,
+            "time": 0
+          }
+        ]
+      },
+      "running": {
+        "badge": "transform: rotate(43.23deg);",
+        "cards": [
+          {
+            "opacity": "1",
+            "transform": "matrix(0.960695, -0.277604, 0.277604, 0.960695, -33.8765, 0)"
+          },
+          {
+            "opacity": "1",
+            "transform": "matrix(0.990125, -0.140187, 0.140187, 0.990125, -16.9383, 0)"
+          },
+          {
+            "opacity": "1",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "transform": "matrix(0.990125, 0.140187, -0.140187, 0.990125, 16.9383, 0)"
+          },
+          {
+            "opacity": "1",
+            "transform": "matrix(0.960695, 0.277604, -0.277604, 0.960695, 33.8765, 0)"
+          }
+        ],
+        "videos": [
+          {
+            "paused": true,
+            "ready": 4,
+            "time": 0
+          },
+          {
+            "paused": false,
+            "ready": 4,
+            "time": 1.4097
+          }
+        ]
+      },
+      "carouselThird": "true",
+      "tickerFocus": "paused"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "initial": {
+        "badge": "transform: rotate(0.51deg);",
+        "cards": [
+          {
+            "opacity": "0",
+            "transform": "matrix(0.964463, -0.264217, 0.264217, 0.964463, -26.3956, 180)"
+          },
+          {
+            "opacity": "0",
+            "transform": "matrix(0.991076, -0.133298, 0.133298, 0.991076, -13.1978, 180)"
+          },
+          {
+            "opacity": "0.00529267",
+            "transform": "matrix(1, 0, 0, 1, 0, 178.588)"
+          },
+          {
+            "opacity": "0",
+            "transform": "matrix(0.991076, 0.133298, -0.133298, 0.991076, 13.1978, 180)"
+          },
+          {
+            "opacity": "0",
+            "transform": "matrix(0.964463, 0.264217, -0.264217, 0.964463, 26.3956, 180)"
+          }
+        ],
+        "videos": [
+          {
+            "paused": false,
+            "ready": 4,
+            "time": 0
+          },
+          {
+            "paused": false,
+            "ready": 4,
+            "time": 0
+          }
+        ]
+      },
+      "running": {
+        "badge": "transform: rotate(43.5deg);",
+        "cards": [
+          {
+            "opacity": "1",
+            "transform": "matrix(0.964463, -0.264217, 0.264217, 0.964463, -26.3956, 0)"
+          },
+          {
+            "opacity": "1",
+            "transform": "matrix(0.991076, -0.133298, 0.133298, 0.991076, -13.1978, 0)"
+          },
+          {
+            "opacity": "1",
+            "transform": "none"
+          },
+          {
+            "opacity": "1",
+            "transform": "matrix(0.991076, 0.133298, -0.133298, 0.991076, 13.1978, 0)"
+          },
+          {
+            "opacity": "1",
+            "transform": "matrix(0.964463, 0.264217, -0.264217, 0.964463, 26.3956, 0)"
+          }
+        ],
+        "videos": [
+          {
+            "paused": false,
+            "ready": 4,
+            "time": 1.353815
+          },
+          {
+            "paused": false,
+            "ready": 4,
+            "time": 1.4141
+          }
+        ]
+      },
+      "carouselThird": "true",
+      "tickerFocus": "paused"
+    }
+  ],
+  "drag": {
+    "viewport": 390,
+    "dragBefore": "opacity: 1; transform: none; user-select: none; touch-action: none;",
+    "dragAfter": "opacity: 1; transform: scale(1.03157); user-select: none; touch-action: none;"
+  },
+  "interaction": {
+    "threeDevicesFAQ": true,
+    "desktopTabletLoadMore": 8,
+    "mobileNativeClickLoadMore": 8,
+    "mobileKeyboardLoadMore": 8,
+    "languagePreservesQueryHash": true,
+    "menuLocksBody": true,
+    "escapeRestoresFocus": true,
+    "localDownloadNotice": true,
+    "desktopTabletStickerKeyboard": true,
+    "consoleErrors": 0,
+    "consoleWarnings": 0
+  },
+  "notes": [
+    "平板最外侧视频离屏暂停属于预期；中央可见视频实际播放。",
+    "手机加载按钮在自动平滑滚动未结束时的点击曾误命中；实际滚动到按钮后鼠标点击与键盘操作均正常。",
+    "截图字节为 JPEG，经实际解码后无缩放转为 WebP。"
+  ]
+}

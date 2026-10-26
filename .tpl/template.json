@@ -1,0 +1,306 @@
+{
+  "format": "git-template",
+  "formatVersion": "0.2.0",
+  "id": "rhys",
+  "version": "1.0.0",
+  "gitUrl": "https://github.com/weelume/rhys-template",
+  "name": "Rhys · 产品设计师作品集",
+  "localizedNames": {
+    "en": "Rhys · Product designer portfolio"
+  },
+  "sceneId": "brand-portfolio",
+  "listed": false,
+  "tags": [
+    "作品集",
+    "创意设计",
+    "动态卡片",
+    "中英文",
+    "PC / iPad / H5"
+  ],
+  "stack": [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "framer-motion"
+  ],
+  "summary": "暖白与彩色卡片的设计师作品集，包含八个项目、六篇随笔、十五个创意实验与动态视频。",
+  "accentColor": "#ffab53",
+  "cover": "assets/desktop-home.webp",
+  "screenshots": [
+    {
+      "src": "assets/desktop-home.webp",
+      "alt": "Rhys desktop home",
+      "device": "desktop",
+      "width": 1430,
+      "height": 993,
+      "surfaceId": "site",
+      "pageSlug": ""
+    },
+    {
+      "src": "assets/desktop-work.webp",
+      "alt": "Rhys desktop work",
+      "device": "desktop",
+      "width": 1430,
+      "height": 993,
+      "surfaceId": "site",
+      "pageSlug": "work"
+    },
+    {
+      "src": "assets/desktop-notes.webp",
+      "alt": "Rhys desktop notes",
+      "device": "desktop",
+      "width": 1430,
+      "height": 993,
+      "surfaceId": "site",
+      "pageSlug": "notes"
+    },
+    {
+      "src": "assets/desktop-contact.webp",
+      "alt": "Rhys desktop contact",
+      "device": "desktop",
+      "width": 1430,
+      "height": 993,
+      "surfaceId": "site",
+      "pageSlug": ""
+    },
+    {
+      "src": "assets/tablet-home.webp",
+      "alt": "Rhys tablet home",
+      "device": "tablet",
+      "width": 824,
+      "height": 1166,
+      "surfaceId": "site",
+      "pageSlug": ""
+    },
+    {
+      "src": "assets/tablet-work.webp",
+      "alt": "Rhys tablet work",
+      "device": "tablet",
+      "width": 824,
+      "height": 1166,
+      "surfaceId": "site",
+      "pageSlug": "work"
+    },
+    {
+      "src": "assets/tablet-notes.webp",
+      "alt": "Rhys tablet notes",
+      "device": "tablet",
+      "width": 824,
+      "height": 1166,
+      "surfaceId": "site",
+      "pageSlug": "notes"
+    },
+    {
+      "src": "assets/tablet-contact.webp",
+      "alt": "Rhys tablet contact",
+      "device": "tablet",
+      "width": 824,
+      "height": 1166,
+      "surfaceId": "site",
+      "pageSlug": ""
+    },
+    {
+      "src": "assets/mobile-home.webp",
+      "alt": "Rhys mobile home",
+      "device": "mobile",
+      "width": 380,
+      "height": 822,
+      "surfaceId": "site",
+      "pageSlug": ""
+    },
+    {
+      "src": "assets/mobile-work.webp",
+      "alt": "Rhys mobile work",
+      "device": "mobile",
+      "width": 380,
+      "height": 822,
+      "surfaceId": "site",
+      "pageSlug": "work"
+    },
+    {
+      "src": "assets/mobile-notes.webp",
+      "alt": "Rhys mobile notes",
+      "device": "mobile",
+      "width": 380,
+      "height": 822,
+      "surfaceId": "site",
+      "pageSlug": "notes"
+    },
+    {
+      "src": "assets/mobile-contact.webp",
+      "alt": "Rhys mobile contact",
+      "device": "mobile",
+      "width": 380,
+      "height": 822,
+      "surfaceId": "site",
+      "pageSlug": ""
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "site",
+      "name": "作品集",
+      "platform": "pc",
+      "locales": [
+        "zh",
+        "en"
+      ],
+      "pages": [
+        {
+          "slug": "",
+          "title": "首页",
+          "localizedTitles": {
+            "en": "Home"
+          }
+        },
+        {
+          "slug": "work",
+          "title": "作品",
+          "localizedTitles": {
+            "en": "Work"
+          }
+        },
+        {
+          "slug": "about",
+          "title": "关于",
+          "localizedTitles": {
+            "en": "About"
+          }
+        },
+        {
+          "slug": "notes",
+          "title": "随笔",
+          "localizedTitles": {
+            "en": "Notes"
+          }
+        },
+        {
+          "slug": "exploration",
+          "title": "探索",
+          "localizedTitles": {
+            "en": "Exploration"
+          }
+        },
+        {
+          "slug": "work/waypoint-group-trip-planner",
+          "title": "Waypoint · 团体旅行规划",
+          "localizedTitles": {
+            "en": "Waypoint — Group Trip Planner"
+          }
+        },
+        {
+          "slug": "work/solstice-brand-identity-rooftop-solar",
+          "title": "Solstice · 屋顶太阳能品牌",
+          "localizedTitles": {
+            "en": "Solstice — Brand Identity for Rooftop Solar"
+          }
+        },
+        {
+          "slug": "work/ledger-expense-approvals",
+          "title": "Ledger · 费用审批",
+          "localizedTitles": {
+            "en": "Ledger — Expense Approvals"
+          }
+        },
+        {
+          "slug": "work/northbound-research-repository",
+          "title": "Northbound · 研究资料库",
+          "localizedTitles": {
+            "en": "Northbound — Research Repository"
+          }
+        },
+        {
+          "slug": "work/harbor-onboarding-freight-marketplace",
+          "title": "Harbor · 货运市场入驻",
+          "localizedTitles": {
+            "en": "Harbor — Onboarding for a Freight Marketplace"
+          }
+        },
+        {
+          "slug": "work/marrow-packaging-identity-fermentation-kit",
+          "title": "Marrow · 发酵套装包装",
+          "localizedTitles": {
+            "en": "Marrow — Packaging Identity for a Fermentation Kit"
+          }
+        },
+        {
+          "slug": "work/compass-usability-testing-ops",
+          "title": "Compass · 可用性测试运营",
+          "localizedTitles": {
+            "en": "Compass — Usability Testing Ops"
+          }
+        },
+        {
+          "slug": "work/fieldstone-eval-workspace",
+          "title": "Fieldstone · 协作评估空间",
+          "localizedTitles": {
+            "en": "Fieldstone — Eval Workspace"
+          }
+        },
+        {
+          "slug": "notes/the-best-tool-i-turned-off",
+          "title": "今年最好用的工具 是我关掉的那一个",
+          "localizedTitles": {
+            "en": "The best tool I used this year was the one I turned off"
+          }
+        },
+        {
+          "slug": "notes/i-stopped-asking-the-model-to-be-creative",
+          "title": "不再要求模型发挥创意 它反而更有用了",
+          "localizedTitles": {
+            "en": "I stopped asking the model to be creative, and it got more useful"
+          }
+        },
+        {
+          "slug": "notes/the-roadmap-review-we-replaced",
+          "title": "我们用五分钟站会 代替路线图评审",
+          "localizedTitles": {
+            "en": "The roadmap review we replaced with a five-minute standup"
+          }
+        },
+        {
+          "slug": "notes/a-component-isnt-reusable-until-broken",
+          "title": "被别人用坏之前 组件还谈不上可复用",
+          "localizedTitles": {
+            "en": "A component isn’t reusable until someone else has broken it"
+          }
+        },
+        {
+          "slug": "notes/most-research-fails-in-the-readout",
+          "title": "研究往往不败在访谈 而败在汇报",
+          "localizedTitles": {
+            "en": "Most research doesn’t fail in the interview. It fails in the readout."
+          }
+        },
+        {
+          "slug": "notes/the-last-ten-percent-is-a-different-skill",
+          "title": "最后百分之十 需要另一种能力",
+          "localizedTitles": {
+            "en": "The last ten percent is a different skill than the first ninety"
+          }
+        },
+        {
+          "slug": "privacy",
+          "title": "隐私政策",
+          "localizedTitles": {
+            "en": "Privacy"
+          }
+        },
+        {
+          "slug": "terms",
+          "title": "使用条款",
+          "localizedTitles": {
+            "en": "Terms"
+          }
+        }
+      ]
+    }
+  ],
+  "license": {
+    "type": "restricted",
+    "file": "docs/LICENSE.md",
+    "summary": "参考站文案与素材的商业再分发许可未确认",
+    "redistributionAllowed": false
+  },
+  "$schema": "./schemas/template.schema.json"
+}
